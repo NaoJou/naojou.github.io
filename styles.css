@@ -61,7 +61,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Centers the nav links */
-    gap: 30px; /* Adds spacing between items */
+    gap: 40px; /* Adds spacing between items */
 }
 
 nav ul li {

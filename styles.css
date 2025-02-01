@@ -70,9 +70,11 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'Jost', sans-serif;
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 400;
+    font-weight: 300;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 

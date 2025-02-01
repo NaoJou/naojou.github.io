@@ -4,36 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naomi Jouan - Game Design</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #8FB9A8;
+            --background-cream: #FEFAD4;
+            --nav-orange: #FCD0BA;
+            --accent-pink: #F1828D;
+            --text-dark: #765D69;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            background-color: var(--background-cream);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-green);
+            color: #FEFAD4;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 200;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: var(--accent-pink);
+        }
+
+        nav {
+            background-color: var(--nav-orange);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 400;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: var(--accent-pink);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            font-size: 2em;
+            color: var(--accent-pink);
+        }
+
+        h3 {
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            font-size: 1.5em;
+            color: var(--accent-pink);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>NAOMI JOUAN <br><span>GAME DESIGN</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#videogames">VIDEOGAMES</a></li>
-                <li><a href="#boardgames">BOARDGAMES</a></li>
-                <li><a href="#narration">NARRATION</a></li>
-                <li><a href="#other">OTHER</a></li>
-            </ul>
-        </nav>
+        <h1>NAOMI JOUAN</h1>
+        <h2>GAME DESIGN</h2>
     </header>
-    <main>
-        <section id="about">
-            <h2>About me</h2>
-            <h3>Greetings, wanderer! The path ahead is full of wonders.</h3>
-            <p>My name is Naomi, and you have just stepped into my domain. I’ll be your guide through this portfolio, a collection of my finest creations. As a storyteller and world-building enthusiast, I craft experiences meant to be explored.</p>
-            <p>Collaboration drives me—I thrive in teams and constantly seek to refine my skills, always learning, always evolving.</p>
-            <p>Feel free to wander through my playground, and don’t hesitate to reach out. Whether you want to embark on a shared creative journey or simply discuss the secrets of storytelling and game design, I’d love to connect.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact me</h2>
-        </section>
-    </main>
+
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#resume">RESUME</a>
+        <a href="#videogames">VIDEOGAMES</a>
+        <a href="#boardgames">BOARDGAMES</a>
+        <a href="#narration">NARRATION</a>
+        <a href="#other">OTHER</a>
+    </nav>
+
+    <section id="about">
+        <h2>About me</h2>
+        <h3>Greetings, wanderer! The path ahead is full of wonders.</h3>
+        <p>My name is Naomi, and you have just stepped into my domain. I'll be your guide through this portfolio, a collection of my finest creations. As a storyteller and world-building enthusiast, I craft experiences meant to be explored.</p>
+        <p>Collaboration drives me—I thrive in teams and constantly seek to refine my skills, always learning, always evolving.</p>
+        <p>Feel free to wander through my playground, and don't hesitate to reach out. Whether you want to embark on a shared creative journey or simply discuss the secrets of storytelling and game design, I’d love to connect.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact me</h2>
+    </section>
 </body>
 </html>

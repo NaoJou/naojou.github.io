@@ -1,76 +1,108 @@
+/* Global styles */
+:root {
+    --primary-green: #8FB9A8;
+    --background-cream: #FEFAD4;
+    --nav-orange: #FCD0BA;
+    --accent-pink: #F1828D;
+    --text-dark: #765D69;
+}
+
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #FEFAD4;
-    color: #765D69;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    background-color: var(--background-cream);
+    color: var(--text-dark);
     margin: 0;
     padding: 0;
 }
 
+/* Header (Title + Subtitle) */
 header {
-    background-color: #8FB9A8;
-    text-align: center;
-    padding: 20px 0;
+    background-color: var(--primary-green);
+    color: var(--background-cream);
+    padding: 20px;
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px; /* Add some left space */
 }
 
 header h1 {
     margin: 0;
-    color: #FEFAD4;
+    font-size: 2.5em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
 }
 
-header span {
-    display: block;
-    font-size: 1.2em;
-    color: #FCD0BA;
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--text-dark);
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #FCD0BA; /* Matches your navigation bar color */
-    padding: 15px;
+    background-color: var(--nav-orange);
+    padding: 15px 0;
     text-align: center;
-    border-radius: 0 0 20px 20px; /* Rounded corners ONLY at the bottom */
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Centers the navigation bar */
+    border-radius: 0px 0px 20px 20px; /* Rounded only at the bottom */
+    width: 80%; /* Keeps it centered */
+    margin: 0 auto;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    gap: 30px; /* Adds spacing between items */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #765D69; /* Default color */
-    font-weight: bold;
+    color: var(--text-dark);
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-pink);
 }
 
 nav ul li a.active {
-    color: #F1828D; /* Highlighted color for the selected page */
+    color: var(--accent-pink); /* Changes color of the selected tab */
 }
 
+/* Main Section */
 main {
     width: 80%;
     margin: 40px auto;
 }
 
+/* Headings */
 h2 {
-    color: #F1828D;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    color: var(--accent-pink);
 }
 
 h3 {
-    color: #F1828D;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
     font-size: 1.5em;
+    color: var(--accent-pink);
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-#about p {
-    font-size: 1.1em;
+/* Text */
+p {
+    font-size: 1.2em;
     line-height: 1.6;
 }

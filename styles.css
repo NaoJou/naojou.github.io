@@ -99,7 +99,7 @@ main {
 section {
     width: 56%; 
     margin: 10px auto; /* Centers the text */
-    padding: 10px;
+    padding: 0px;
     text-align: justify; /* Ensures a clean layout */
 }
 

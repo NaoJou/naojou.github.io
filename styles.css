@@ -86,6 +86,8 @@ nav ul li a.active {
 main {
     width: 80%;
     margin: 40px auto;
+    padding: 200px;
+    text-align: left;
 }
 
 /* Headings */

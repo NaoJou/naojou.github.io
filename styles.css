@@ -25,7 +25,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 180px; /* Add some left space */
+    padding-left: 175px; /* Add some left space */
 }
 
 header h1 {
@@ -61,7 +61,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Centers the nav links */
-    gap: 60px; /* Adds spacing between items */
+    gap: 58px; /* Adds spacing between items */
 }
 
 nav ul li {

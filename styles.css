@@ -39,6 +39,8 @@ header h1 {
 header h2 {
     margin: 0;
     font-size: 2.5em;
+        font-family: 'Dosis', sans-serif;
+    font-weight: 200;
     color: var(--text-dark);
     padding-left: 150px;
 }

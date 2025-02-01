@@ -98,8 +98,8 @@ main {
 
 section {
     width: 56%; 
-    margin: 50px auto; /* Centers the text */
-    padding: 20px;
+    margin: 10px auto; /* Centers the text */
+    padding: 10px;
     text-align: justify; /* Ensures a clean layout */
 }
 

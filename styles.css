@@ -90,7 +90,7 @@ nav ul li a.active {
 /* Main Section */
 main {
     width: 60%;
-    margin: 40px auto;
+    margin: 0;
     padding-left: 200px;
     text-align: left;
 }

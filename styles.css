@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 200px; /* Add some left space */
+    padding-left: 210px; /* Add some left space */
 }
 
 header h1 {

@@ -20,7 +20,6 @@ body {
 header {
     background-color: var(--primary-green);
     color: var(--background-cream);
-    padding: 20px;
     text-align: left; /* Aligns text to the left */
     display: flex;
     flex-direction: column;

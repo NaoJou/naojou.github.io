@@ -90,6 +90,13 @@ main {
     text-align: left;
 }
 
+section {
+    max-width: 800px; /* Limits the text width */
+    margin: 50px auto; /* Centers the text */
+    padding: 20px;
+    text-align: justify; /* Ensures a clean layout */
+}
+
 /* Headings */
 h2 {
     font-family: 'Jost', sans-serif;

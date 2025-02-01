@@ -75,7 +75,7 @@ nav ul li a {
     font-size: 1.4em;
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 450;
+    font-weight: 600;
     text-transform: uppercase;
     transition: color 0.3s;
 }

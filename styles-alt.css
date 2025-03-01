@@ -29,12 +29,12 @@ body {
 header {
     background: url("assets/texture1b.png") no-repeat center center;
     background-size: cover;
-    height: 200px; /* Adjusted height */
+    height: 100px; /* Adjusted height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 200px; /* Shifted right */
+    padding-left: 220px; /* Shifted right */
     padding-top: 30px;
     position: relative;
 }

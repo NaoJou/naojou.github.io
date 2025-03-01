@@ -5,78 +5,74 @@
     --nav-orange: #FCD0BA;
     --accent-pink: #F1828D;
     --text-dark: #765D69;
-    --text-bluedark: #4d6a81;
-    --text-bluedarker: #2f3a47;
-    --nav-pink: #e6d4d8;
-    --nav-dark: #cfb6be;
-    --background-pink: #f3e5e2;
-    --accent-blue: #a1c4de;
-    --text-purple: #73575c;
 }
 
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
+    justify-content: justified;
     background-color: var(--background-cream);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
 }
 
-/* Header (Title + Subtitle) */
+/* Header */
 header {
-    /* background-color: var(--primary-green); */
-    background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
-    background-size: cover; /* Ensures the image covers the full area */
-    color: var(--background-cream); 
-    padding: 100px 40px 10px 40px; /* Reduced bottom padding */
-    text-align: left; /* Aligns text to the left */
+    background: url("assets/texture2.png") no-repeat center center;
+    background-size: cover;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 100px; /* Add some left space */
-    padding-bottom: 5px;
+    align-items: center; /* Centering dynamically */
+    position: relative;
 }
 
+/* Title (Naomi Jouan Game Design) */
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers text automatically */
+    text-align: center;
+    width: fit-content; /* Makes it fit the text */
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed */
+    top: auto; /* Override the previous top positioning */
+    transform: none;
+}
+
+/* Title Text */
 header h1 {
     margin: 0;
+    color: var(--background-cream);
     font-size: 3.5em;
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
-    padding-left: 150px;
 }
 
 header h2 {
-    margin-top: -20px;
-    margin-bottom: 0px;
-    font-size: 3.56em;
-        font-family: 'Dosis', sans-serif;
+    margin: -10px 0 0 0;
+    font-size: 2.2em;
+    font-family: 'Dosis', sans-serif;
     font-weight: 200;
     color: var(--text-dark);
-    padding-left: 150px;
 }
 
-/* Icons */
+/* Social Icons */
 .social-icons {
-    position: absolute;  /* Positions it over the header */
-    top: 175px;           /* Distance from the top */
-    right: 250px;         /* Distance from the right */
-    display: flex;       /* Aligns items in a row */
-    gap: 10px;           /* Adds spacing between icons */
+    position: absolute;
+    bottom: 10px; /* Adjust for spacing */
+    right: 17.5%;
+    display: flex;
+    gap: 10px;
 }
 
 .social-icons a img {
-    width: 30px;         /* Adjust icon size */
-    height: 30px;        /* Keeps the aspect ratio */
-    max-width: 100%;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
-    display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
-}
-
-.social-icons a img:hover {
-    transform: scale(1.1); /* Makes the icon slightly bigger when hovered */
-    opacity: 0.8;         /* Slight transparency effect */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Navigation Bar */
@@ -84,8 +80,8 @@ nav {
     background-color: var(--nav-orange);
     padding: 15px 0;
     text-align: center;
-    border-radius: 0px 0px 10px 10px; /* Rounded only at the bottom */
-    width: 65%; /* Keeps it centered */
+    border-radius: 0px 0px 10px 10px;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -94,8 +90,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers the nav links */
-    gap: 58px; /* Adds spacing between items */
+    justify-content: center;
+    gap: 40px;
 }
 
 nav ul li {
@@ -104,7 +100,7 @@ nav ul li {
 
 nav ul li a {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
@@ -117,22 +113,19 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: var(--accent-pink); /* Changes color of the selected tab */
+    color: var(--titles-pink);
 }
 
 /* Main Section */
 main {
     width: 60%;
-    margin: 0;
-    padding-left: 200px;
-    text-align: left;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 section {
-    width: 56%; 
-    margin: 10px auto; /* Centers the text */
-    padding: 0px;
-    text-align: justify; /* Ensures a clean layout */
+    width: 60%;
+    margin: 30px auto;
 }
 
 /* Headings */
@@ -148,10 +141,89 @@ h3 {
     font-weight: 400;
     font-size: 1.5em;
     color: var(--accent-pink);
+    margin-top: 5px; /* Reduced spacing */
 }
 
 /* Text */
 p {
     font-size: 1.2em;
     line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 180px;
+        padding-left: 60px;
+    }
+    
+    header h1 {
+        font-size: 2.8em;
+    }
+    
+    header h2 {
+        font-size: 2em;
+    }
+
+    .social-icons {
+        bottom: 10px;
+        right: 30px;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 160px;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header h2 {
+        font-size: 1.8em;
+    }
+
+    .social-icons {
+        bottom: 5px;
+        right: 15px;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main,
+    section {
+        width: 90%;
+        text-align: justify;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }

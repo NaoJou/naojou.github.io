@@ -12,12 +12,13 @@
     --background-pink: #f3e5e2;
     --accent-blue: #a1c4de;
     --text-purple: #73575c;
+    --white: #ffffff;
 }
 
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    background-color: var(--background-pink);
+    background-color: var(--white);
     color: var(--text-purple);
     margin: 0;
     padding: 0;
@@ -52,7 +53,7 @@ header h2 {
     font-size: 3.56em;
         font-family: 'Dosis', sans-serif;
     font-weight: 200;
-    color: var(--background-pink);
+    color: var(--nav-pink);
     padding-left: 150px;
 }
 

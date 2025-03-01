@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background: url("assets/texture2.png") no-repeat center center;
+    background-color: var(--primary-green);
     background-size: cover;
     height: 220px;
     display: flex;
@@ -37,9 +37,10 @@ header {
     text-align: center;
     width: fit-content; /* Makes it fit the text */
     position: absolute;
-    bottom: 20px; /* Adjust this value as needed */
-    top: auto; /* Override the previous top positioning */
-    transform: none;
+    bottom: 20px; /* Keep it aligned at the bottom */
+    left: 17.5%; /* Aligns with the navbar start (since navbar width is 65%) */
+    transform: none; /* Remove centering */
+    text-align: left; /* Ensure text is aligned properly */
 }
 
 /* Title Text */
@@ -53,7 +54,7 @@ header h1 {
 
 header h2 {
     margin: -10px 0 0 0;
-    font-size: 2.2em;
+    font-size: 3.5em;
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
     color: var(--text-dark);
@@ -69,8 +70,8 @@ header h2 {
 }
 
 .social-icons a img {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -103,7 +104,7 @@ nav ul li a {
     font-size: 1.2em;
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
     transition: color 0.3s;
 }

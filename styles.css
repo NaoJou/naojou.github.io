@@ -19,7 +19,7 @@ body {
 /* Header (Title + Subtitle) */
 header {
     /* background-color: var(--primary-green); */
-    background: url("assets/texture2.png") no-repeat center center; /* Path to your texture */
+    background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
     background-size: cover; /* Ensures the image covers the full area */
     color: var(--background-cream); 
     padding: 80px 40px 10px 40px; /* Reduced bottom padding */

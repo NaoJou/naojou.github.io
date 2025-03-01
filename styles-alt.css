@@ -81,8 +81,8 @@ nav {
 /* Social Icons */
 .social-icons {
     position: absolute;
-    bottom: 15px; /* Positioned dynamically */
-    right: 60px; /* Adjusted for better alignment */
+    bottom: 10px; /* Adjust for spacing */
+    right: 17.5%;
     display: flex;
     gap: 10px;
 }

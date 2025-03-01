@@ -107,9 +107,12 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:hover {
     color: var(--accent-blue);
+}
+
+nav ul li a.active {
+    color: var(--titles-blue);
 }
 
 /* Main Section */
@@ -129,14 +132,14 @@ h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 2.3em;
-    color: var(--accent-blue);
+    color: var(--titles-blue);
 }
 
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--accent-blue);
+    color: var(--text-bluedark);
     margin-top: 5px; /* Reduced spacing */
 }
 

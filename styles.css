@@ -51,7 +51,7 @@ header h2 {
 .social-icons {
     position: absolute;  /* Positions it over the header */
     top: 175px;           /* Distance from the top */
-    right: 200px;         /* Distance from the right */
+    right: 250px;         /* Distance from the right */
     display: flex;       /* Aligns items in a row */
     gap: 15px;           /* Adds spacing between icons */
 }

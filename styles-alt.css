@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: var(--text-otherblue); /* Changes color of the selected tab */
+    color: var(--titles-blue); /* Changes color of the selected tab */
 }
 
 /* Main Section */
@@ -150,7 +150,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--text-otherblue);
+    color: var(--text-bluedark);
 }
 
 /* Text */

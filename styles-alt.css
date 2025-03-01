@@ -26,43 +26,51 @@ body {
 
 /* Header (Title + Subtitle) */
 header {
-    background: url("assets/texture1b.png") no-repeat center center; /* Textured background */
+    background: url("assets/texture1b.png") no-repeat center center;
     background-size: cover;
     color: var(--text-bluedark);
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4vh 5vw 2vh; /* Responsive padding */
+    padding: 8vh 5vw 4vh; /* Adjusted for better positioning */
+    position: relative; /* Ensures correct positioning */
 }
 
+/* Header Text */
 header h1 {
     margin: 0;
-    font-size: 3.5vw; /* Responsive text size */
+    font-size: 4vw; /* Increased for better scaling */
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
+    position: absolute;
+    bottom: 7vh; /* Moves "Naomi Jouan" down */
+    left: 5vw;
 }
 
 header h2 {
-    margin-top: -1vh; /* Reduced spacing */
+    margin-top: -1vh; 
     font-size: 2.5vw;
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
     color: var(--white);
+    position: absolute;
+    bottom: 3vh; /* Moves "Game Design" down */
+    left: 5vw;
 }
 
 /* Social Icons */
 .social-icons {
     position: absolute;
     top: 2vh;
-    right: 5vw;
+    right: 3vw; /* Keeps them in the top-right corner */
     display: flex;
-    gap: 1vw;
+    gap: 1.5vw;
 }
 
 .social-icons a img {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 3vw;
+    height: 3vw;
     object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -75,11 +83,11 @@ header h2 {
 /* Navigation Bar */
 nav {
     background-color: var(--background-pink);
-    padding: 1.5vh 0;
+    padding: 2vh 0;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
     width: 65vw;
-    margin: 0 auto;
+    margin: -1vh auto 0; /* Adjusted position */
 }
 
 nav ul {
@@ -97,7 +105,7 @@ nav ul li {
 
 nav ul li a {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.6vw; /* Increased for better readability */
     text-decoration: none;
     color: var(--text-bluedarker);
     font-weight: 500;
@@ -115,7 +123,7 @@ nav ul li a.active {
 
 /* Main Section */
 main {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     text-align: left;
 }
@@ -134,7 +142,7 @@ h2 {
     font-weight: 300;
     font-size: 2.3vw;
     color: var(--accent-blue);
-    margin-bottom: 1vh; /* Reduced space */
+    margin-bottom: 1vh;
 }
 
 h3 {
@@ -142,31 +150,32 @@ h3 {
     font-weight: 400;
     font-size: 2vw;
     color: var(--accent-blue);
-    margin-top: 0; /* Removed extra gap */
+    margin-top: -1vh; /* Less space */
 }
 
 /* Text */
 p {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     line-height: 1.6;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Header Adjustments */
+@media screen and (max-width: 1024px) {
     header {
-        padding: 5vh 5vw;
+        padding: 10vh 5vw 5vh;
         text-align: center;
     }
 
     header h1, header h2 {
-        font-size: 5vw;
+        font-size: 6vw; /* Increases font size on smaller screens */
+        position: static;
+        text-align: center;
     }
 
     /* Social Icons */
     .social-icons {
-        top: 3vh;
-        right: 3vw;
+        top: 5vh;
+        right: 5vw;
     }
 
     .social-icons a img {
@@ -176,7 +185,8 @@ p {
 
     /* Navbar */
     nav {
-        width: 90vw;
+        width: 85vw;
+        margin-top: -2vh;
     }
 
     nav ul {

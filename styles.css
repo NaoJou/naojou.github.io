@@ -47,7 +47,7 @@ header {
 /* Title Text */
 header h1 {
     margin: 0;
-    color: var(--accent-pink);
+    color: var(--nav-orange);
     font-size: 3.5em;
     font-family: 'Dosis', sans-serif;
     font-weight: 200;

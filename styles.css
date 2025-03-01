@@ -10,7 +10,7 @@
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    justify-content: justified;
+    text-align: justify;
     background-color: var(--background-cream);
     color: var(--text-dark);
     margin: 0;
@@ -19,7 +19,8 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-green);
+    /* background-color: var(--primary-green);*/
+    background: url("assets/texture3.png") no-repeat center center;
     background-size: cover;
     height: 220px;
     display: flex;

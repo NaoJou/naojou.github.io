@@ -19,7 +19,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     background-color: var(--white);
-    color: var(--text-purple);
+    color: var(--text-bluedarker);
     margin: 0;
     padding: 0;
 }

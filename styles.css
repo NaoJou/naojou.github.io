@@ -61,6 +61,7 @@ header h2 {
     height: 30px;        /* Keeps the aspect ratio */
     max-width: 100%;
     object-fit: contain;
+    display: block;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
 }
 

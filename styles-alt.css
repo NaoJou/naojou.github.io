@@ -59,7 +59,7 @@ header h2 {
 .social-icons {
     position: absolute;
     bottom: 15px;  /* Lowered */
-    right: 180px;   /* Shifted left */
+    right: 250px;   /* Shifted left */
     display: flex;
     gap: 8px;
 }

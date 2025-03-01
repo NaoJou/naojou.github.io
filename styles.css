@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background: url("assets/texture2.png") no-repeat center center;
+    background: url("assets/texture3.png") no-repeat center center;
     background-size: cover;
     height: 220px;
     display: flex;

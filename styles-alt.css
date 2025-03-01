@@ -37,7 +37,7 @@ header {
     padding-left: 250px; /* Shifted right */
     padding-top: 30px;
     padding-bottom: -10px;
-    position: relative;
+    position: bottom;
 }
 
 header h1 {

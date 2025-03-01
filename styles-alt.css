@@ -31,7 +31,7 @@ header {
     /* background-color: var(--primary-green); */
     background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
     background-size: cover; /* Ensures the image covers the full area */
-    color: var(--text-purple); 
+    color: var(--titles-blue); 
     padding: 100px 40px 10px 40px; /* Reduced bottom padding */
     text-align: left; /* Aligns text to the left */
     display: flex;

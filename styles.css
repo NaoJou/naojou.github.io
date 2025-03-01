@@ -58,7 +58,8 @@ header h2 {
 
 .social-icons a img {
     width: 30px;         /* Adjust icon size */
-    height: auto;        /* Keeps the aspect ratio */
+    height: 30px;        /* Keeps the aspect ratio */
+    object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
 }
 

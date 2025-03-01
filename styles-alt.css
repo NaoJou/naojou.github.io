@@ -7,12 +7,10 @@
     --text-dark: #765D69;
     --text-bluedark: #4d6a81;
     --text-bluedarker: #2f3a47;
-    --text-otherblue: #7c91a5;
     --nav-pink: #e6d4d8;
     --nav-dark: #cfb6be;
     --background-pink: #f3e5e2;
     --accent-blue: #a1c4de;
-    --titles-blue: #90afc7;
     --text-purple: #73575c;
     --white: #ffffff;
 }
@@ -28,67 +26,59 @@ body {
 
 /* Header (Title + Subtitle) */
 header {
-    /* background-color: var(--primary-green); */
-    background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
-    background-size: cover; /* Ensures the image covers the full area */
-    color: var(--text-bluedark); 
-    padding: 100px 40px 10px 40px; /* Reduced bottom padding */
-    text-align: left; /* Aligns text to the left */
+    background: url("assets/texture1b.png") no-repeat center center; /* Textured background */
+    background-size: cover;
+    color: var(--text-bluedark);
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 100px; /* Add some left space */
-    padding-bottom: 5px;
+    padding: 4vh 5vw 2vh; /* Responsive padding */
 }
 
 header h1 {
     margin: 0;
-    font-size: 3.5em;
+    font-size: 3.5vw; /* Responsive text size */
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
-    padding-left: 150px;
 }
 
 header h2 {
-    margin-top: -20px;
-    margin-bottom: 0px;
-    font-size: 3.56em;
-        font-family: 'Dosis', sans-serif;
+    margin-top: -1vh; /* Reduced spacing */
+    font-size: 2.5vw;
+    font-family: 'Dosis', sans-serif;
     font-weight: 200;
     color: var(--white);
-    padding-left: 150px;
 }
 
-/* Icons */
+/* Social Icons */
 .social-icons {
-    position: absolute;  /* Positions it over the header */
-    top: 185px;           /* Distance from the top */
-    right: 250px;         /* Distance from the right */
-    display: flex;       /* Aligns items in a row */
-    gap: 10px;           /* Adds spacing between icons */
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+    display: flex;
+    gap: 1vw;
 }
 
 .social-icons a img {
-    width: 30px;         /* Adjust icon size */
-    height: 30px;        /* Keeps the aspect ratio */
-    max-width: 100%;
+    width: 2.5vw;
+    height: 2.5vw;
     object-fit: contain;
-    display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-icons a img:hover {
-    transform: scale(1.1); /* Makes the icon slightly bigger when hovered */
-    opacity: 0.8;         /* Slight transparency effect */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 /* Navigation Bar */
 nav {
     background-color: var(--background-pink);
-    padding: 15px 0;
+    padding: 1.5vh 0;
     text-align: center;
-    border-radius: 0px 0px 10px 10px; /* Rounded only at the bottom */
-    width: 65%; /* Keeps it centered */
+    border-radius: 0px 0px 10px 10px;
+    width: 65vw;
     margin: 0 auto;
 }
 
@@ -97,8 +87,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers the nav links */
-    gap: 58px; /* Adds spacing between items */
+    justify-content: center;
+    gap: 4vw;
 }
 
 nav ul li {
@@ -107,7 +97,7 @@ nav ul li {
 
 nav ul li a {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5vw;
     text-decoration: none;
     color: var(--text-bluedarker);
     font-weight: 500;
@@ -120,41 +110,102 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: var(--titles-blue); /* Changes color of the selected tab */
+    color: var(--accent-blue);
 }
 
 /* Main Section */
 main {
     width: 60%;
-    margin: 0;
-    padding-left: 200px;
+    margin: 0 auto;
     text-align: left;
 }
 
+/* Sections */
 section {
-    width: 56%; 
-    margin: 10px auto; /* Centers the text */
+    width: 56%;
+    margin: 5vh auto;
     padding: 0px;
-    text-align: justify; /* Ensures a clean layout */
+    text-align: justify;
 }
 
 /* Headings */
 h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 2.3em;
-    color: var(--titles-blue);
+    font-size: 2.3vw;
+    color: var(--accent-blue);
+    margin-bottom: 1vh; /* Reduced space */
 }
 
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
-    color: var(--text-bluedark);
+    font-size: 2vw;
+    color: var(--accent-blue);
+    margin-top: 0; /* Removed extra gap */
 }
 
 /* Text */
 p {
-    font-size: 1.2em;
+    font-size: 1.5vw;
     line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Header Adjustments */
+    header {
+        padding: 5vh 5vw;
+        text-align: center;
+    }
+
+    header h1, header h2 {
+        font-size: 5vw;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        top: 3vh;
+        right: 3vw;
+    }
+
+    .social-icons a img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    /* Navbar */
+    nav {
+        width: 90vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+        padding: 1vh 0;
+        display: block;
+    }
+
+    /* Sections */
+    section {
+        width: 90%;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
 }

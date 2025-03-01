@@ -18,9 +18,11 @@ body {
 
 /* Header (Title + Subtitle) */
 header {
-    background-color: var(--primary-green);
-    color: var(--background-cream);
-    padding: 100px 40px 10px 40px; /* Reduced bottom padding */
+    /* background-color: var(--primary-green); */
+    background: url("assets/header-texture.png") no-repeat center center; /* Path to your texture */
+    background-size: cover; /* Ensures the image covers the full area */
+    color: var(--background-cream); 
+    padding: 80px 40px 10px 40px; /* Reduced bottom padding */
     text-align: left; /* Aligns text to the left */
     display: flex;
     flex-direction: column;
@@ -50,10 +52,10 @@ header h2 {
 /* Icons */
 .social-icons {
     position: absolute;  /* Positions it over the header */
-    top: 20px;           /* Distance from the top */
-    right: 20px;         /* Distance from the right */
+    top: 175px;           /* Distance from the top */
+    right: 250px;         /* Distance from the right */
     display: flex;       /* Aligns items in a row */
-    gap: 15px;           /* Adds spacing between icons */
+    gap: 10px;           /* Adds spacing between icons */
 }
 
 .social-icons a img {
@@ -75,7 +77,7 @@ nav {
     background-color: var(--nav-orange);
     padding: 15px 0;
     text-align: center;
-    border-radius: 0px 0px 20px 20px; /* Rounded only at the bottom */
+    border-radius: 0px 0px 10px 10px; /* Rounded only at the bottom */
     width: 65%; /* Keeps it centered */
     margin: 0 auto;
 }

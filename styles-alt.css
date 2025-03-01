@@ -150,7 +150,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--titles-blue);
+    color: var(--text-bluedark);
 }
 
 /* Text */

@@ -1,0 +1,157 @@
+/* Global styles */
+:root {
+    --primary-green: #8FB9A8;
+    --background-cream: #FEFAD4;
+    --nav-orange: #FCD0BA;
+    --accent-pink: #F1828D;
+    --text-dark: #765D69;
+    --text-bluedark: #4d6a81;
+    --text-bluedarker: #2f3a47;
+    --nav-pink: #e6d4d8;
+    --nav-dark: #cfb6be;
+    --background-pink: #f3e5e2;
+    --accent-blue: #a1c4de;
+    --text-purple: #73575c;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    background-color: var(--text-purple);
+    color: var(--text-purple);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header (Title + Subtitle) */
+header {
+    /* background-color: var(--primary-green); */
+    background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
+    background-size: cover; /* Ensures the image covers the full area */
+    color: var(--background-pink); 
+    padding: 100px 40px 10px 40px; /* Reduced bottom padding */
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px; /* Add some left space */
+    padding-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    padding-left: 150px;
+}
+
+header h2 {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    font-size: 3.56em;
+        font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color: var(--text-bluedark);
+    padding-left: 150px;
+}
+
+/* Icons */
+.social-icons {
+    position: absolute;  /* Positions it over the header */
+    top: 175px;           /* Distance from the top */
+    right: 250px;         /* Distance from the right */
+    display: flex;       /* Aligns items in a row */
+    gap: 10px;           /* Adds spacing between icons */
+}
+
+.social-icons a img {
+    width: 30px;         /* Adjust icon size */
+    height: 30px;        /* Keeps the aspect ratio */
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Makes the icon slightly bigger when hovered */
+    opacity: 0.8;         /* Slight transparency effect */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--nav-pink);
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px; /* Rounded only at the bottom */
+    width: 65%; /* Keeps it centered */
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    gap: 58px; /* Adds spacing between items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--text-bluedark);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-blue);
+}
+
+nav ul li a.active {
+    color: var(--accent-blue); /* Changes color of the selected tab */
+}
+
+/* Main Section */
+main {
+    width: 60%;
+    margin: 0;
+    padding-left: 200px;
+    text-align: left;
+}
+
+section {
+    width: 56%; 
+    margin: 10px auto; /* Centers the text */
+    padding: 0px;
+    text-align: justify; /* Ensures a clean layout */
+}
+
+/* Headings */
+h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+    color: var(--accent-pink);
+}
+
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--accent-pink);
+}
+
+/* Text */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}

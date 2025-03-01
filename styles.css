@@ -47,6 +47,26 @@ header h2 {
     padding-left: 150px;
 }
 
+/* Icons */
+.social-icons {
+    position: absolute;  /* Positions it over the header */
+    top: 20px;           /* Distance from the top */
+    right: 20px;         /* Distance from the right */
+    display: flex;       /* Aligns items in a row */
+    gap: 15px;           /* Adds spacing between icons */
+}
+
+.social-icons a img {
+    width: 30px;         /* Adjust icon size */
+    height: auto;        /* Keeps the aspect ratio */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Makes the icon slightly bigger when hovered */
+    opacity: 0.8;         /* Slight transparency effect */
+}
+
 /* Navigation Bar */
 nav {
     background-color: var(--nav-orange);

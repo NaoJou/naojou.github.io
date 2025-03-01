@@ -82,7 +82,7 @@ header h2 {
 
 /* Navigation Bar */
 nav {
-    background-color: var(--nav-pink);
+    background-color: var(--background-pink);
     padding: 15px 0;
     text-align: center;
     border-radius: 0px 0px 10px 10px; /* Rounded only at the bottom */

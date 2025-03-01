@@ -7,6 +7,7 @@
     --text-dark: #765D69;
     --text-bluedark: #4d6a81;
     --text-bluedarker: #2f3a47;
+    --text-otherblue: #7c91a5;
     --nav-pink: #e6d4d8;
     --nav-dark: #cfb6be;
     --background-pink: #f3e5e2;
@@ -114,7 +115,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--text-bluedark);
+    color: var(--text-otherblue);
 }
 
 nav ul li a.active {

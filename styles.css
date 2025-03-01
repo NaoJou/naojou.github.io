@@ -38,7 +38,7 @@ header {
     text-align: center;
     width: fit-content; /* Makes it fit the text */
     position: absolute;
-    bottom: 20px; /* Keep it aligned at the bottom */
+    bottom: 5px; /* Keep it aligned at the bottom */
     left: 17.5%; /* Aligns with the navbar start (since navbar width is 65%) */
     transform: none; /* Remove centering */
     text-align: left; /* Ensure text is aligned properly */
@@ -51,6 +51,7 @@ header h1 {
     font-size: 3.5em;
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
+    line-height: 1;
 }
 
 header h2 {
@@ -59,6 +60,7 @@ header h2 {
     font-family: 'Dosis', sans-serif;
     font-weight: 200;
     color: var(--text-dark);
+    line-height: 1;
 }
 
 /* Social Icons */

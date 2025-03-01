@@ -46,8 +46,9 @@ header {
     text-align: center;
     width: fit-content; /* Makes it fit the text */
     position: absolute;
-    top: 50%; /* Aligns vertically */
-    transform: translateY(-50%); /* Centers exactly */
+    bottom: 20px; /* Adjust this value as needed */
+    top: auto; /* Override the previous top positioning */
+    transform: none;
 }
 
 /* Title Text */

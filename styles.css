@@ -37,9 +37,10 @@ header {
     text-align: center;
     width: fit-content; /* Makes it fit the text */
     position: absolute;
-    bottom: 20px; /* Adjust this value as needed */
-    top: auto; /* Override the previous top positioning */
-    transform: none;
+    bottom: 20px; /* Keep it aligned at the bottom */
+    left: 17.5%; /* Aligns with the navbar start (since navbar width is 65%) */
+    transform: none; /* Remove centering */
+    text-align: left; /* Ensure text is aligned properly */
 }
 
 /* Title Text */

@@ -107,18 +107,18 @@ nav ul li a {
     font-family: 'Dosis', sans-serif;
     font-size: 1.4em;
     text-decoration: none;
-    color: var(--text-bluedark);
+    color: var(--text-bluedarker);
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--accent-blue);
+    color: var(--text-bluedark);
 }
 
 nav ul li a.active {
-    color: var(--accent-blue); /* Changes color of the selected tab */
+    color: var(--text-bluedark); /* Changes color of the selected tab */
 }
 
 /* Main Section */

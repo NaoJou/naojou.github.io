@@ -114,11 +114,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--text-bluedark);
+    color: var(--background-pink);
 }
 
 nav ul li a.active {
-    color: var(--text-bluedark); /* Changes color of the selected tab */
+    color: var(--background-pink); /* Changes color of the selected tab */
 }
 
 /* Main Section */
@@ -141,14 +141,14 @@ h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 2.3em;
-    color: var(--accent-pink);
+    color: var(--accent-blue);
 }
 
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--accent-pink);
+    color: var(--accent-blue);
 }
 
 /* Text */

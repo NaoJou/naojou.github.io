@@ -114,11 +114,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--background-pink);
+    color: var(--accent-blue);
 }
 
 nav ul li a.active {
-    color: var(--background-pink); /* Changes color of the selected tab */
+    color: var(--accent-blue); /* Changes color of the selected tab */
 }
 
 /* Main Section */

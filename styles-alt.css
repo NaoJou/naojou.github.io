@@ -7,10 +7,12 @@
     --text-dark: #765D69;
     --text-bluedark: #4d6a81;
     --text-bluedarker: #2f3a47;
+    --text-otherblue: #7c91a5;
     --nav-pink: #e6d4d8;
     --nav-dark: #cfb6be;
     --background-pink: #f3e5e2;
     --accent-blue: #a1c4de;
+    --titles-blue: #90afc7;
     --text-purple: #73575c;
     --white: #ffffff;
 }
@@ -29,7 +31,7 @@ header {
     /* background-color: var(--primary-green); */
     background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
     background-size: cover; /* Ensures the image covers the full area */
-    color: var(--text-bluedark); 
+    color: var(--text-purple); 
     padding: 100px 40px 10px 40px; /* Reduced bottom padding */
     text-align: left; /* Aligns text to the left */
     display: flex;
@@ -118,7 +120,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: var(--accent-blue); /* Changes color of the selected tab */
+    color: var(--text-otherblue); /* Changes color of the selected tab */
 }
 
 /* Main Section */
@@ -141,14 +143,14 @@ h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 2.3em;
-    color: var(--accent-blue);
+    color: var(--titles-blue);
 }
 
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--accent-blue);
+    color: var(--text-otherblue);
 }
 
 /* Text */

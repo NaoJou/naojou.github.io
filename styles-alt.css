@@ -34,7 +34,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 120px; /* Shifted right */
+    padding-left: 200px; /* Shifted right */
     padding-top: 30px;
     position: relative;
 }
@@ -59,7 +59,7 @@ header h2 {
 .social-icons {
     position: absolute;
     bottom: 15px;  /* Lowered */
-    right: 40px;   /* Shifted left */
+    right: 180px;   /* Shifted left */
     display: flex;
     gap: 8px;
 }

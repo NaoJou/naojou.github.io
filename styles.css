@@ -19,7 +19,8 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-green);
+    /* background-color: var(--primary-green);*/
+    background: url("assets/texture3.png") no-repeat center center;
     background-size: cover;
     height: 220px;
     display: flex;

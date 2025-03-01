@@ -28,7 +28,7 @@ header {
     /* background-color: var(--primary-green); */
     background: url("assets/texture1b.png") no-repeat center center; /* Path to your texture */
     background-size: cover; /* Ensures the image covers the full area */
-    color: var(--background-pink); 
+    color: var(--text-bluedark); 
     padding: 100px 40px 10px 40px; /* Reduced bottom padding */
     text-align: left; /* Aligns text to the left */
     display: flex;
@@ -52,7 +52,7 @@ header h2 {
     font-size: 3.56em;
         font-family: 'Dosis', sans-serif;
     font-weight: 200;
-    color: var(--text-bluedark);
+    color: var(--background-pink);
     padding-left: 150px;
 }
 

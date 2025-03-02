@@ -258,10 +258,10 @@ font-size: 1.1em;
 
     .social-icons {
         bottom: 20px;
-        right: 7%; /* Keeps icons aligned with navbar */
+        right: 9%; /* Keeps icons aligned with navbar */
     }
     .mode-toggle {
-        bottom: -7px; 
+        bottom: -10px; 
         font-size: 0.9em;
         right: 5%;
     }

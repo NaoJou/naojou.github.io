@@ -64,28 +64,30 @@ line-height: 1;
 /* Mode Toggle */
 .mode-toggle {
     position: absolute;
-    top: 10px;
-    right: 17.5%; /* Same alignment as social icons */
-    font-family: 'Dosis', sans-serif;
+    bottom: -20px; /* Moves it below the icons */
+    right: 17.5%; /* Align with the social icons */
     font-size: 1em;
-    color: var(--text-dark);
-    font-weight: 800;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Keeps it centered below icons */
 }
 
 .mode-toggle button {
     background: none;
     border: none;
-    font-size: 1em;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 800;
-    cursor: pointer;
     color: var(--background-cream);
-    transition: color 0.3s ease;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 .mode-toggle button:hover {
-    color: var(--text-dark);
+    color: var(--accent-pink);
 }
+
 
 
 /* Social Icons */

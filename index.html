@@ -51,7 +51,6 @@
     </section>
 
 <script>
-<script>
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
@@ -69,6 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.addEventListener("click", function () {
         navLinks.classList.remove("show");
         overlay.classList.remove("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("show");
+            overlay.classList.remove("active");
     });
 });
 </script>

@@ -79,18 +79,16 @@ line-height: 1;
     background: none;
     border: none;
     color: var(--background-cream);
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .mode-toggle span {
-    font-size: 1.2em; /* Keep "Modes:" smaller for contrast */
+    font-size: 1.1em; /* Keep "Modes:" smaller for contrast */
 }
 
 .mode-toggle button {
-    font-size: 1.6em; /* Increase size of "Happy / Dark" */
+    font-size: 1.4em; /* Increase size of "Happy / Dark" */
     font-weight: 700; /* Make it more readable */
 }
 

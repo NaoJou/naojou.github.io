@@ -202,79 +202,24 @@ font-size: 1.1em;
 }
 
 @media screen and (max-width: 768px) {
-header {
-height: 160px;
-align-items: center;
-text-align: center;
-padding: 0;
-}
-
-header h1 {
-font-size: 2.2em;
-}
-
-header h2 {
-font-size: 1.8em;
-}
-
-.social-icons {
-bottom: 5px;
-right: 5%;
-}
-
-    nav {
-        width: 90%;
-        .nav-links {
-        display: none;
-        flex-direction: column;
-        background: var(--nav-orange);
-        position: absolute;
-        top: 60px;
-        left: 10px;
-        width: 200px;
-        border-radius: 10px;
-        padding: 10px 0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-    .nav-links {
-        display: flex; /* Ensures it is visible */
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 50px; /* Pushes it down below navbar */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        background: var(--nav-orange);
-        border-radius: 10px;
-        padding: 10px 0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .nav-links.hidden {
-        display: none;
-    }
-        
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links li {
-        padding: 5px 20px;
-    }
-
-    .nav-links li a {
-        font-size: 1em;  
-    }
-
-    /* Hide the full nav bar */
     nav {
         width: 100%;
-        text-align: left;
-        padding: 10px;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Make text a bit smaller */
+        padding: 5px 0; /* Reduce spacing */
+    }
+
+    .social-icons {
+        right: 5%; /* Keeps icons aligned with navbar */
+    }
 }
 
 main,

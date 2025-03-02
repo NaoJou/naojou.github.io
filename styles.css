@@ -61,6 +61,33 @@ color: var(--text-dark);
 line-height: 1;
 }
 
+/* Mode Toggle */
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 17.5%; /* Same alignment as social icons */
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.mode-toggle button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--accent-pink);
+    transition: color 0.3s ease;
+}
+
+.mode-toggle button:hover {
+    color: var(--text-dark);
+}
+
+
 /* Social Icons */
 .social-icons {
 position: absolute;

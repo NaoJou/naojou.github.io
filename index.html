@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naomi Jouan - Game Design</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naomi Jouan - Game Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-    <div class="header-title">
-        <h1>NAOMI JOUAN</h1>
-        <h2>GAME DESIGN</h2>
-    </div>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://naomijouan.itch.io" target="_blank">
-            <img src="assets/itchio-icon.png" alt="Itch.io">
-        </a>
-    </div>
+<header>
+<div class="header-title">
+<h1>NAOMI JOUAN</h1>
+<h2>GAME DESIGN</h2>
+</div>
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
+<img src="assets/linkedin-icon.png" alt="LinkedIn">
+</a>
+<a href="https://naomijouan.itch.io" target="_blank">
+<img src="assets/itchio-icon.png" alt="Itch.io">
+</a>
+</div>
 </header>
 
-   <nav>
-    <div class="menu-container">
-        <img src="assets/menuicon.png" alt="Menu" class="menu-icon">
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">ABOUT</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="videogames.html">VIDEOGAMES</a></li>
-            <li><a href="boardgames.html">BOARDGAMES</a></li>
-            <li><a href="narration.html">NARRATION</a></li>
-            <li><a href="other.html">OTHER</a></li>
-        </ul>
-    </div>
+<nav>
+<div class="menu-container">
+<img src="assets/menu-icon.png" alt="Menu" class="menu-icon">
+<ul class="nav-links">
+<li><a href="index.html" class="active">ABOUT</a></li>
+<li><a href="resume.html">RESUME</a></li>
+<li><a href="videogames.html">VIDEOGAMES</a></li>
+<li><a href="boardgames.html">BOARDGAMES</a></li>
+<li><a href="narration.html">NARRATION</a></li>
+<li><a href="other.html">OTHER</a></li>
+</ul>
+</div>
 </nav>
 
-    <section id="about">
-        <h2>About me</h2>
-        <h3>Greetings, wanderer! The path ahead is full of wonders.</h3>
-        <p>My name is Naomi, and you have just stepped into my domain. I'll be your guide through this portfolio, a collection of my finest creations. As a storyteller and world-building enthusiast, I craft experiences meant to be explored.</p>
-        <p>Collaboration drives me—I thrive in teams and constantly seek to refine my skills, always learning, always evolving.</p>
-        <p>Feel free to wander through my playground, and don't hesitate to reach out. Whether you want to embark on a shared creative journey or simply discuss the secrets of storytelling and game design, I’d love to connect.</p>
-    </section>
+<section id="about">
+<h2>About me</h2>
+<h3>Greetings, wanderer! The path ahead is full of wonders.</h3>
+<p>My name is Naomi, and you have just stepped into my domain. I'll be your guide through this portfolio, a collection of my finest creations. As a storyteller and world-building enthusiast, I craft experiences meant to be explored.</p>
+<p>Collaboration drives me—I thrive in teams and constantly seek to refine my skills, always learning, always evolving.</p>
+<p>Feel free to wander through my playground, and don't hesitate to reach out. Whether you want to embark on a shared creative journey or simply discuss the secrets of storytelling and game design, I’d love to connect.</p>
+</section>
 
-    <section id="contact">
-        <h2>Contact me</h2>
-    </section>
+<section id="contact">
+<h2>Contact me</h2>
+</section>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const navLinks = document.querySelector(".nav-links");
-    const overlay = document.createElement("div");
-    overlay.classList.add("menu-overlay");
-    document.body.appendChild(overlay);
+    const menuIcon = document.querySelector(".menu-icon"); // Selects the menu icon
+    const navLinks = document.querySelector(".nav-links"); // Selects the navigation links
 
-    // Toggle menu when clicking the icon
     menuIcon.addEventListener("click", function () {
-        navLinks.classList.toggle("show");
-        overlay.classList.toggle("active"); // Show overlay
-    });
-
-    // Close menu when clicking outside
-    overlay.addEventListener("click", function () {
-        navLinks.classList.remove("show");
-        overlay.classList.remove("active");
-    });
-
-    // Close menu when clicking on a menu item
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", function () {
-            navLinks.classList.remove("show");
-            overlay.classList.remove("active");
-        });
+        navLinks.classList.toggle("show"); // Toggles the menu open/close
     });
 });
 </script>
-
 </body>
 </html>

@@ -212,9 +212,9 @@ gap: 10px;
 }
 
 .mode-toggle {
-    bottom: -20px;
+    bottom: -10px;
     font-size: 1em; /* Slightly smaller for mid-sized screens */
-    right: 22%; /* Adjust for better alignment */
+    right: 17.5%; /* Adjust for better alignment */
 }
 
 .mode-toggle button {
@@ -260,9 +260,9 @@ font-size: 1.1em;
         right: 5%; /* Keeps icons aligned with navbar */
     }
     .mode-toggle {
-        bottom: -5px; 
+        bottom: -7px; 
         font-size: 0.9em;
-        right: 12%;
+        right: 10%;
     }
 
     .mode-toggle button {

@@ -51,25 +51,28 @@
     </section>
 
 <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
-    const overlay = document.createElement("div"); // Create an overlay
+    const overlay = document.createElement("div"); // Creates a background overlay
     overlay.classList.add("menu-overlay");
-    document.body.appendChild(overlay); // Add overlay to the body
+    document.body.appendChild(overlay);
 
     // Toggle menu when clicking the icon
     menuIcon.addEventListener("click", function () {
         navLinks.classList.toggle("show");
-        overlay.classList.toggle("active"); // Show/hide overlay
+        overlay.classList.toggle("active");
     });
 
-    // Click outside menu to close it
+    // Close menu when clicking outside
     overlay.addEventListener("click", function () {
         navLinks.classList.remove("show");
-        overlay.classList.remove("active"); // Hide overlay
+        overlay.classList.remove("active");
     });
 });
+</script>
+
 </script>
 </body>
 </html>

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function setDarkMode() {
         console.log("Switching to Dark Mode...");
-        themeStylesheet.href = "dark-styles.css";
+        themeStylesheet.href = "styles-dark.css";
         if (linkedinIcon) linkedinIcon.src = "assets/linkedin-iconblue.png";
         if (itchioIcon) itchioIcon.src = "assets/itchio-iconblue.png";
         localStorage.setItem("theme", "dark");

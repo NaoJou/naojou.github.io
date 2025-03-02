@@ -81,7 +81,7 @@ line-height: 1;
 .mode-toggle button {
     background: none;
     border: none;
-    color: var(--background-dark);
+    color: var(--text-blue);
     font-family: 'Dosis', sans-serif;
     cursor: pointer;
     transition: color 0.3s;

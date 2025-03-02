@@ -257,13 +257,13 @@ font-size: 1.1em;
     }
 
     .social-icons {
-        bottom: 10px;
+        bottom: 20px;
         right: 7%; /* Keeps icons aligned with navbar */
     }
     .mode-toggle {
         bottom: -5px; 
         font-size: 0.9em;
-        right: 10%;
+        right: 8%;
     }
 
     .mode-toggle button {

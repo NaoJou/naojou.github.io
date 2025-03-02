@@ -1,6 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const happyModeBtn = document.getElementById("happyMode");
-    const darkModeBtn = document.getElementById("darkMode");
+    const themeStylesheet = document.getElementById("themeStylesheet");
+    const happyModeButton = document.getElementById("happyMode");
+    const darkModeButton = document.getElementById("darkMode");
+
+    const linkedinIcon = document.getElementById("linkedin-icon");
+    const itchioIcon = document.getElementById("itchio-icon");
+
+    function switchToDarkMode() {
+        themeStylesheet.href = "dark-styles.css";
+        linkedinIcon.src = "assets/linkedin-iconblue.png"; 
+        itchioIcon.src = "assets/itchio-iconblue.png"; 
+    }
+
+    function switchToHappyMode() {
+        themeStylesheet.href = "styles.css";
+        linkedinIcon.src = "assets/linkedin-icon.png"; 
+        itchioIcon.src = "assets/itchio-icon.png"; 
+    }
+
+    happyModeButton.addEventListener("click", switchToHappyMode);
+    darkModeButton.addEventListener("click", switchToDarkMode);
 
     // Check saved mode in localStorage
     if (localStorage.getItem("theme") === "dark") {

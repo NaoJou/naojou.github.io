@@ -68,6 +68,7 @@ line-height: 1;
     right: 17.5%; /* Align with the social icons */
     font-size: 1.2em;
     font-weight: 600;
+    font-family: 'Dosis', sans-serif;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -79,6 +80,7 @@ line-height: 1;
     background: none;
     border: none;
     color: var(--background-cream);
+    font-family: 'Dosis', sans-serif;
     cursor: pointer;
     transition: color 0.3s;
 }

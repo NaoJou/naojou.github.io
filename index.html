@@ -52,11 +52,22 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon"); // Selects the menu icon
-    const navLinks = document.querySelector(".nav-links"); // Selects the navigation links
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector(".nav-links");
+    const overlay = document.createElement("div"); // Create an overlay
+    overlay.classList.add("menu-overlay");
+    document.body.appendChild(overlay); // Add overlay to the body
 
+    // Toggle menu when clicking the icon
     menuIcon.addEventListener("click", function () {
-        navLinks.classList.toggle("show"); // Toggles the menu open/close
+        navLinks.classList.toggle("show");
+        overlay.classList.toggle("active"); // Show/hide overlay
+    });
+
+    // Click outside menu to close it
+    overlay.addEventListener("click", function () {
+        navLinks.classList.remove("show");
+        overlay.classList.remove("active"); // Hide overlay
     });
 });
 </script>

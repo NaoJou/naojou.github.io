@@ -261,9 +261,9 @@ font-size: 1.1em;
         right: 7%; /* Keeps icons aligned with navbar */
     }
     .mode-toggle {
-        bottom: -5px; 
+        bottom: -7px; 
         font-size: 0.9em;
-        right: 8%;
+        right: 5%;
     }
 
     .mode-toggle button {

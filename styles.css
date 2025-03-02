@@ -107,14 +107,15 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: flex; /* Ensures horizontal layout */
+    justify-content: center; /* Centers items */
+    gap: 40px; /* Adds spacing */
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline-block; /* Keeps them in one line */
 }
+
 
 nav ul li a {
     font-family: 'Dosis', sans-serif;
@@ -227,32 +228,36 @@ p {
     }
 
         .nav-links {
-        display: none;
+        display: none; /* Hides the full menu */
         flex-direction: column;
         background: var(--nav-orange);
         position: fixed;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 250px;
-        height: 100vh; 
+        height: 100vh;
         border-radius: 0 10px 10px 0;
         padding: 20px 0;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         z-index: 1000;
     }
 
+    /* Show the menu when toggled */
     .nav-links.show {
-        display: flex; /* Shows the dropdown menu */
+        display: flex;
     }
 
-    .nav-links li {
-        padding: 15px 20px;
-    }
-
-.menu-icon {
+    .menu-icon {
         display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
     }
-
     .menu-overlay {
         display: none; /* Hidden by default */
         position: fixed;

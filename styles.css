@@ -72,6 +72,7 @@ line-height: 1;
     display: flex;
     gap: 8px;
     align-items: center;
+    width: auto;
     justify-content: center;
     width: 120px; /* Keeps it centered below icons */
 }
@@ -219,7 +220,7 @@ gap: 10px;
 }
 
 nav {
-width: 80%;
+width: 60%;
 }
 
 nav ul {
@@ -227,7 +228,7 @@ gap: 20px;
 }
 
 section {
-width: 75%;
+width: 65%;
 }
 
 p {

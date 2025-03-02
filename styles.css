@@ -66,8 +66,8 @@ line-height: 1;
     position: absolute;
     bottom: -25px; /* Moves it below the icons */
     right: 17.5%; /* Align with the social icons */
-    font-size: 1.1em;
-    font-weight: 600;
+    font-size: 1.15em;
+    font-weight: 700;
     font-family: 'Dosis', sans-serif;
     display: flex;
     gap: 8px;

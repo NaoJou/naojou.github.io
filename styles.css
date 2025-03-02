@@ -1,292 +1,257 @@
 /* Global styles */
 :root {
-    --primary-green: #8FB9A8;
-    --background-cream: #FEFAD4;
-    --nav-orange: #FCD0BA;
-    --accent-pink: #F1828D;
-    --text-dark: #765D69;
+--primary-green: #8FB9A8;
+--background-cream: #FEFAD4;
+--nav-orange: #FCD0BA;
+--accent-pink: #F1828D;
+--text-dark: #765D69;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    text-align: justify;
-    background-color: var(--background-cream);
-    color: var(--text-dark);
-    margin: 0;
-    padding: 0;
+font-family: 'Jost', sans-serif;
+font-weight: 300;
+text-align: justify;
+background-color: var(--background-cream);
+color: var(--text-dark);
+margin: 0;
+padding: 0;
 }
 
 /* Header */
 header {
-    /* background-color: var(--primary-green);*/
-    background: url("assets/texture5.png") no-repeat center center;
-    background-size: cover;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Centering dynamically */
-    position: relative;
+/* background-color: var(--primary-green);*/
+background: url("assets/texture3.png") no-repeat center center;
+background-size: cover;
+height: 220px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; /* Centering dynamically */
+position: relative;
 }
 
 /* Title (Naomi Jouan Game Design) */
 .header-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers text automatically */
-    text-align: center;
-    width: fit-content; /* Makes it fit the text */
-    position: absolute;
-    bottom: 5px; /* Keep it aligned at the bottom */
-    left: 17.5%; /* Aligns with the navbar start (since navbar width is 65%) */
-    transform: none; /* Remove centering */
-    text-align: left; /* Ensure text is aligned properly */
+display: flex;
+flex-direction: column;
+align-items: center; /* Centers text automatically */
+text-align: center;
+width: fit-content; /* Makes it fit the text */
+position: absolute;
+bottom: 5px; /* Keep it aligned at the bottom */
+left: 17.5%; /* Aligns with the navbar start (since navbar width is 65%) */
+transform: none; /* Remove centering */
+text-align: left; /* Ensure text is aligned properly */
 }
 
 /* Title Text */
 header h1 {
-    margin: 0;
-    color: var(--background-cream);
-    font-size: 3.5em;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 200;
-    line-height: 1;
+margin: 0;
+color: var(--background-cream);
+font-size: 3.5em;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+line-height: 1;
 }
 
 header h2 {
-    margin: -10px 0 0 0;
-    font-size: 3.5em;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 200;
-    color: var(--text-dark);
-    line-height: 1;
+margin: -10px 0 0 0;
+font-size: 3.5em;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+color: var(--text-dark);
+line-height: 1;
 }
 
 /* Social Icons */
 .social-icons {
-    position: absolute;
-    bottom: 10px; /* Adjust for spacing */
-    right: 17.5%;
-    display: flex;
-    gap: 10px;
+position: absolute;
+bottom: 10px; /* Adjust for spacing */
+right: 17.5%;
+display: flex;
+gap: 10px;
 }
 
 .social-icons a img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+width: 30px;
+height: 30px;
+object-fit: contain;
+transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: var(--nav-orange);
-    padding: 15px 0;
-    text-align: center;
-    border-radius: 0px 0px 10px 10px;
-    width: 65%;
-    margin: 0 auto;
-    position: relative;
+background-color: var(--nav-orange);
+padding: 15px 0;
+text-align: center;
+border-radius: 0px 0px 10px 10px;
+width: 65%;
+margin: 0 auto;
 }
 
-/* Hamburger Menu Icon /*
 .menu-icon {
     display: none;
-width: 35px;
-        height: 35px;
-        cursor: pointer;
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1001;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Ensures horizontal layout */
-    justify-content: center; /* Centers items */
-    gap: 40px; /* Adds spacing */
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 40px;
 }
 
 nav ul li {
-    display: inline-block; /* Keeps them in one line */
+display: inline-block;
 }
 
-
 nav ul li a {
-    font-family: 'Dosis', sans-serif;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: color 0.3s;
+font-family: 'Dosis', sans-serif;
+font-size: 1.2em;
+text-decoration: none;
+color: var(--text-dark);
+font-weight: 800;
+text-transform: uppercase;
+transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--accent-pink);
+color: var(--accent-pink);
 }
 
 nav ul li a.active {
-    color: var(--accent-pink);
+color: var(--accent-pink);
 }
 
 /* Main Section */
 main {
-    width: 60%;
-    margin: 0 auto;
-    text-align: justify;
+width: 60%;
+margin: 0 auto;
+text-align: justify;
 }
 
 section {
-    width: 60%;
-    margin: 30px auto;
+width: 60%;
+margin: 30px auto;
 }
 
 /* Headings */
 h2 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 2.3em;
-    color: var(--accent-pink);
+font-family: 'Jost', sans-serif;
+font-weight: 300;
+font-size: 2.3em;
+color: var(--accent-pink);
 }
 
 h3 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    color: var(--accent-pink);
-    margin-top: 5px; /* Reduced spacing */
+font-family: 'Jost', sans-serif;
+font-weight: 400;
+font-size: 1.5em;
+color: var(--accent-pink);
+margin-top: 5px; /* Reduced spacing */
 }
 
 /* Text */
 p {
-    font-size: 1.2em;
-    line-height: 1.6;
+font-size: 1.2em;
+line-height: 1.6;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
-    header {
-        height: 180px;
-        padding-left: 60px;
-    }
-    
-    header h1 {
-        font-size: 2.8em;
-    }
-    
-    header h2 {
-        font-size: 2em;
-    }
-
-    .social-icons {
-        bottom: 10px;
-        right: 30px;
-    }
-
-    nav {
-        width: 80%;
-    }
-
-    nav ul {
-        gap: 30px;
-    }
-
-    .menu-icon {
-    display: none;
+header {
+height: 180px;
+padding-left: 60px;
 }
 
-    section {
-        width: 75%;
-    }
+header h1 {
+font-size: 2.8em;
+}
 
-    p {
-        font-size: 1.1em;
-    }
+header h2 {
+font-size: 2em;
+}
+
+.social-icons {
+bottom: 10px;
+right: 30px;
+}
+
+nav {
+width: 80%;
+}
+
+nav ul {
+gap: 30px;
+}
+
+section {
+width: 75%;
+}
+
+p {
+font-size: 1.1em;
+}
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        height: 160px;
-        align-items: center;
-        text-align: center;
-        padding: 0;
-    }
+header {
+height: 160px;
+align-items: center;
+text-align: center;
+padding: 0;
+}
 
-    header h1 {
-        font-size: 2.2em;
-    }
+header h1 {
+font-size: 2.2em;
+}
 
-    header h2 {
-        font-size: 1.8em;
-    }
+header h2 {
+font-size: 1.8em;
+}
 
-    .social-icons {
-        bottom: 5px;
-        right: 15px;
-    }
+.social-icons {
+bottom: 5px;
+right: 15px;
+}
 
-.nav-links {
-        position: fixed;
-        top: 0;
-        left: -250px; /* Move off-screen */
-        width: 250px;
-        height: 100vh;
-        background: var(--nav-orange);
-        flex-direction: column;
-        align-items: start;
-        padding-top: 50px;
-        transition: left 0.3s ease-in-out;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 2000;
-    }
-
-    /* Slide in when menu is active */
-    .nav-links.show {
-        left: 0; /* Move into view */
-    }
-
-    /* Overlay effect */
-    .menu-overlay {
+    nav {
+        width: 90%;
+        .nav-links {
         display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.3);
-        z-index: 1999;
-    }
-
-    /* Show overlay when menu is active */
-    .menu-overlay.active {
-        display: block;
-    }
-
-    .menu-icon {
-        display: block;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
+        flex-direction: column;
+        background: var(--nav-orange);
         position: absolute;
-        left: 15px;
-        top: 15px;
-        z-index: 2001; /* Ensure it's above other elements */
+        top: 60px;
+        left: 10px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    .nav-links.show {
+        display: flex; /* Shows the dropdown menu */
     }
-    .menu-overlay {
-        display: none; /* Hidden by default */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.2); /* Slight background dim */
-        z-index: 999; /* Below the menu but above content */
+
+    .nav-links li {
+        padding: 10px 20px;
+    }
+
+.menu-icon {
+        display: block;
+        position: absolute;
+        left: 10px; /* Position it near the navbar */
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     /* Hide the full nav bar */
@@ -294,15 +259,15 @@ p {
         width: 100%;
         text-align: left;
         padding: 10px;
-    }
+}
 
-    main,
-    section {
-        width: 90%;
-        text-align: justify;
-    }
+main,
+section {
+width: 90%;
+text-align: justify;
+}
 
-    p {
-        font-size: 1em;
-    }
+p {
+font-size: 1em;
+}
 }

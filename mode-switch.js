@@ -10,39 +10,24 @@ document.addEventListener("DOMContentLoaded", function () {
         themeStylesheet.href = "dark-styles.css";
         linkedinIcon.src = "assets/linkedin-iconblue.png"; 
         itchioIcon.src = "assets/itchio-iconblue.png"; 
+        localStorage.setItem("theme", "dark");
     }
 
     function switchToHappyMode() {
         themeStylesheet.href = "styles.css";
         linkedinIcon.src = "assets/linkedin-icon.png"; 
         itchioIcon.src = "assets/itchio-icon.png"; 
-    }
-
-    happyModeButton.addEventListener("click", switchToHappyMode);
-    darkModeButton.addEventListener("click", switchToDarkMode);
-
-    // Check saved mode in localStorage
-    if (localStorage.getItem("theme") === "dark") {
-        setDarkMode();
-    }
-
-    // Switch to Dark Mode
-    darkModeBtn.addEventListener("click", function () {
-        setDarkMode();
-    });
-
-    // Switch to Happy Mode
-    happyModeBtn.addEventListener("click", function () {
-        setHappyMode();
-    });
-
-    function setDarkMode() {
-        document.getElementById("themeStylesheet").href = "styles-dark.css";
-        localStorage.setItem("theme", "dark");
-    }
-
-    function setHappyMode() {
-        document.getElementById("themeStylesheet").href = "styles.css";
         localStorage.setItem("theme", "happy");
     }
+
+    // Apply the correct theme on page load
+    if (localStorage.getItem("theme") === "dark") {
+        switchToDarkMode();
+    } else {
+        switchToHappyMode();
+    }
+
+    // Attach event listeners
+    happyModeButton.addEventListener("click", switchToHappyMode);
+    darkModeButton.addEventListener("click", switchToDarkMode);
 });

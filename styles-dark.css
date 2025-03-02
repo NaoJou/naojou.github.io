@@ -46,7 +46,7 @@ position: relative;
 /* Title Text */
 header h1 {
 margin: 0;
-color: var(--text-blue);
+color: var(--accent-blue);
 font-size: 3.5em;
 font-family: 'Dosis', sans-serif;
 font-weight: 200;

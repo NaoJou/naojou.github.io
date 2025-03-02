@@ -210,6 +210,15 @@ display: flex;
 gap: 10px;
 }
 
+.mode-toggle {
+    font-size: 1em; /* Slightly smaller for mid-sized screens */
+    right: 22%; /* Adjust for better alignment */
+}
+
+.mode-toggle button {
+    font-size: 1em;
+}
+
 nav {
 width: 80%;
 }
@@ -247,5 +256,13 @@ font-size: 1.1em;
 
     .social-icons {
         right: 5%; /* Keeps icons aligned with navbar */
+    }
+    .mode-toggle {
+        font-size: 0.9em; 
+        right: 24%; 
+    }
+
+    .mode-toggle button {
+        font-size: 0.9em;
     }
 }

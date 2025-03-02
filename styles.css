@@ -65,7 +65,7 @@ line-height: 1;
 .mode-toggle {
     position: absolute;
     top: calc(100% + 5px); 
-    right: 20%; /* Align with the social icons */
+    right: 17.5%; /* Align with the social icons */
     font-size: 1.15em;
     font-weight: 700;
     font-family: 'Dosis', sans-serif;

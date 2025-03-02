@@ -238,20 +238,22 @@ right: 15px;
     nav ul {
         flex-direction: column;
         gap: 10px;
-    .nav-links.show {
-        display: flex; /* Shows the dropdown menu */
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Centers the items */
+        width: 100%;  /* Full width */
+        padding: 10px 0;
     }
+
 
     .nav-links li {
-        padding: 10px 20px;
+        padding: 5px 20px;
     }
 
-.menu-icon {
-        display: block;
-        position: absolute;
-        left: 10px; /* Position it near the navbar */
-        top: 50%;
-        transform: translateY(-50%);
+    .nav-links li a {
+        font-size: 1em;  
     }
 
     /* Hide the full nav bar */

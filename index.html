@@ -54,9 +54,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
-    const overlay = document.createElement("div"); // Create overlay
+    const overlay = document.createElement("div");
     overlay.classList.add("menu-overlay");
-    document.body.appendChild(overlay); // Add overlay to body
+    document.body.appendChild(overlay);
 
     // Toggle menu when clicking the icon
     menuIcon.addEventListener("click", function () {
@@ -70,14 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.classList.remove("active");
     });
 
+    // Close menu when clicking on a menu item
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", function () {
             navLinks.classList.remove("show");
             overlay.classList.remove("active");
+        });
     });
 });
 </script>
 
-</script>
 </body>
 </html>

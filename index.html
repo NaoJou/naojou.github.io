@@ -55,14 +55,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
-    const overlay = document.createElement("div"); // Creates a background overlay
+    const overlay = document.createElement("div"); // Create overlay
     overlay.classList.add("menu-overlay");
-    document.body.appendChild(overlay);
+    document.body.appendChild(overlay); // Add overlay to body
 
     // Toggle menu when clicking the icon
     menuIcon.addEventListener("click", function () {
         navLinks.classList.toggle("show");
-        overlay.classList.toggle("active");
+        overlay.classList.toggle("active"); // Show overlay
     });
 
     // Close menu when clicking outside

@@ -1,0 +1,271 @@
+/* Global styles */
+:root {
+--background-dark: #1f2d3a;
+--nav-blue: #5e83a2;
+--accent-blue: #c6e8f9;
+--text-dark: #a2d0ea;
+}
+
+body {
+font-family: 'Jost', sans-serif;
+font-weight: 300;
+text-align: justify;
+background-color: var(--background-cream);
+color: var(--text-dark);
+margin: 0;
+padding: 0;
+}
+
+/* Header */
+header {
+background: url("assets/texture5.png") no-repeat center center;
+background-size: cover;
+height: 220px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; /* Centering dynamically */
+position: relative;
+}
+
+/* Title (Naomi Jouan Game Design) */
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: fit-content; 
+    position: absolute;
+    bottom: 5px; 
+    left: 17.5%; 
+    text-align: left; 
+}
+
+/* Title Text */
+header h1 {
+margin: 0;
+color: var(--background-cream);
+font-size: 3.5em;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+line-height: 1;
+}
+
+header h2 {
+margin: -10px 0 0 0;
+font-size: 3em;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+color: var(--text-dark);
+line-height: 1;
+}
+
+/* Mode Toggle */
+.mode-toggle {
+    position: absolute;
+    bottom: -30px; /* Moves it below the icons */
+    right: 21%; /* Align with the social icons */
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 140px; /* Keeps it centered below icons */
+    white-space: nowrap;
+}
+
+.mode-toggle button {
+    background: none;
+    border: none;
+    color: var(--background-cream);
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.mode-toggle button {
+    font-size: 1.15em;
+    font-weight: 700; /* Make it more readable */
+}
+
+.mode-toggle button:hover {
+    color: var(--text-dark);
+}
+
+
+
+/* Social Icons */
+.social-icons {
+position: absolute;
+bottom: 30px; /* Adjust for spacing */
+bottom: 40px; /* Adjust for spacing */
+right: 17.5%;
+display: flex;
+gap: 10px;
+}
+
+.social-icons a img {
+width: 30px;
+height: 30px;
+object-fit: contain;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+background-color: var(--nav-orange);
+padding: 15px 0;
+text-align: center;
+border-radius: 0px 0px 10px 10px;
+width: 65%;
+margin: 0 auto;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+
+nav ul li {
+display: inline-block;
+}
+
+nav ul li a {
+font-family: 'Dosis', sans-serif;
+font-size: 1.2em;
+text-decoration: none;
+color: var(--text-dark);
+font-weight: 800;
+text-transform: uppercase;
+transition: color 0.3s;
+}
+
+nav ul li a:hover {
+color: var(--accent-pink);
+}
+
+nav ul li a.active {
+color: var(--accent-pink);
+}
+
+/* Main Section */
+main {
+width: 60%;
+margin: 0 auto;
+text-align: justify;
+}
+
+section {
+width: 60%;
+margin: 30px auto;
+}
+
+/* Headings */
+h2 {
+font-family: 'Jost', sans-serif;
+font-weight: 300;
+font-size: 2.3em;
+color: var(--accent-pink);
+}
+
+h3 {
+font-family: 'Jost', sans-serif;
+font-weight: 400;
+font-size: 1.5em;
+color: var(--accent-pink);
+margin-top: 5px; /* Reduced spacing */
+}
+
+/* Text */
+p {
+font-size: 1.2em;
+line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+header {
+height: 180px;
+padding-left: 60px;
+}
+
+header h1 {
+font-size: 2.8em;
+}
+
+header h2 {
+font-size: 2em;
+}
+
+.social-icons {
+bottom: 15px;
+right: 11%;
+display: flex;
+gap: 10px;
+}
+
+.mode-toggle {
+    bottom: -10px;
+    font-size: 1em; /* Slightly smaller for mid-sized screens */
+    right: 11%; /* Adjust for better alignment */
+}
+
+.mode-toggle button {
+    font-size: 1em;
+}
+
+nav {
+width: 80%;
+}
+
+nav ul {
+gap: 20px;
+}
+
+section {
+width: 75%;
+}
+
+p {
+font-size: 1.1em;
+}
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em; 
+        padding: 3px 5px; 
+    }
+
+    .social-icons {
+        bottom: 20px;
+        right: 9%; /* Keeps icons aligned with navbar */
+    }
+    .mode-toggle {
+        bottom: -10px; 
+        font-size: 0.9em;
+        right: 5%;
+    }
+
+    .mode-toggle button {
+        font-size: 0.9em;
+    }
+}

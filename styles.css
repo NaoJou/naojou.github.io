@@ -189,6 +189,10 @@ p {
         gap: 30px;
     }
 
+    .menu-icon {
+    display: none;
+}
+
     section {
         width: 75%;
     }

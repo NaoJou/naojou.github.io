@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const itchioIcon = document.getElementById("itchio-icon");
 
     function switchToDarkMode() {
-        themeStylesheet.href = "dark-styles.css";
+        themeStylesheet.href = "styles-dark.css";
         linkedinIcon.src = "assets/linkedin-iconblue.png"; 
         itchioIcon.src = "assets/itchio-iconblue.png"; 
         localStorage.setItem("theme", "dark");

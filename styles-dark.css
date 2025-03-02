@@ -2,6 +2,7 @@
 :root {
 --background-dark: #1f2d3a;
 --nav-blue: #5e83a2;
+--nav-darkerblue: #5a7489;
 --accent-blue: #c6e8f9;
 --text-dark: #a2d0ea;
 --text-blue: #e9f5fb;
@@ -116,7 +117,7 @@ transition: transform 0.3s ease, opacity 0.3s ease;
 
 /* Navigation Bar */
 nav {
-background-color: var(--nav-blue);
+background-color: var(--nav-darkerblue);
 padding: 15px 0;
 text-align: center;
 border-radius: 0px 0px 10px 10px;

@@ -91,7 +91,7 @@ line-height: 1;
 }
 
 .mode-toggle button:hover {
-    color: var(--accent-pink);
+    color: var(--text-dark);
 }
 
 

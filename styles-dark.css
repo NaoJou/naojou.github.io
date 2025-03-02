@@ -10,7 +10,7 @@ body {
 font-family: 'Jost', sans-serif;
 font-weight: 300;
 text-align: justify;
-background-color: var(--background-cream);
+background-color: var(--background-dark);
 color: var(--text-dark);
 margin: 0;
 padding: 0;
@@ -44,7 +44,7 @@ position: relative;
 /* Title Text */
 header h1 {
 margin: 0;
-color: var(--background-cream);
+color: var(--background-dark);
 font-size: 3.5em;
 font-family: 'Dosis', sans-serif;
 font-weight: 200;
@@ -79,7 +79,7 @@ line-height: 1;
 .mode-toggle button {
     background: none;
     border: none;
-    color: var(--background-cream);
+    color: var(--background-dark);
     font-family: 'Dosis', sans-serif;
     cursor: pointer;
     transition: color 0.3s;
@@ -115,7 +115,7 @@ transition: transform 0.3s ease, opacity 0.3s ease;
 
 /* Navigation Bar */
 nav {
-background-color: var(--nav-orange);
+background-color: var(--nav-blue);
 padding: 15px 0;
 text-align: center;
 border-radius: 0px 0px 10px 10px;
@@ -147,11 +147,11 @@ transition: color 0.3s;
 }
 
 nav ul li a:hover {
-color: var(--accent-pink);
+color: var(--accent-blue);
 }
 
 nav ul li a.active {
-color: var(--accent-pink);
+color: var(--accent-blue);
 }
 
 /* Main Section */
@@ -171,14 +171,14 @@ h2 {
 font-family: 'Jost', sans-serif;
 font-weight: 300;
 font-size: 2.3em;
-color: var(--accent-pink);
+color: var(--accent-blue);
 }
 
 h3 {
 font-family: 'Jost', sans-serif;
 font-weight: 400;
 font-size: 1.5em;
-color: var(--accent-pink);
+color: var(--accent-blue);
 margin-top: 5px; /* Reduced spacing */
 }
 

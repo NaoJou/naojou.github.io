@@ -64,9 +64,9 @@ line-height: 1;
 /* Mode Toggle */
 .mode-toggle {
     position: absolute;
-    bottom: -5px; /* Moves it below the icons */
+    bottom: -7px; /* Moves it below the icons */
     right: 17.5%; /* Align with the social icons */
-    font-size: 1em;
+    font-size: 1.5em;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -93,7 +93,7 @@ line-height: 1;
 /* Social Icons */
 .social-icons {
 position: absolute;
-bottom: 20px; /* Adjust for spacing */
+bottom: 25px; /* Adjust for spacing */
 right: 17.5%;
 display: flex;
 gap: 10px;

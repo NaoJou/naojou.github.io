@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function setDarkMode() {
-        document.getElementById("themeStylesheet").href = "dark.css";
+        document.getElementById("themeStylesheet").href = "styles-dark.css";
         localStorage.setItem("theme", "dark");
     }
 

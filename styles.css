@@ -231,24 +231,41 @@ p {
         right: 15px;
     }
 
-        .nav-links {
-        display: none; /* Hides the full menu */
-        flex-direction: column;
+.nav-links {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Move off-screen */
+        width: 250px;
+        height: 100vh;
         background: var(--nav-orange);
+        flex-direction: column;
+        align-items: start;
+        padding-top: 50px;
+        transition: left 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 2000;
+    }
+
+    /* Slide in when menu is active */
+    .nav-links.show {
+        left: 0; /* Move into view */
+    }
+
+    /* Overlay effect */
+    .menu-overlay {
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 100vw;
         height: 100vh;
-        border-radius: 0 10px 10px 0;
-        padding: 20px 0;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1999;
     }
 
-    /* Show the menu when toggled */
-    .nav-links.show {
-        display: flex;
+    /* Show overlay when menu is active */
+    .menu-overlay.active {
+        display: block;
     }
 
     .menu-icon {
@@ -258,9 +275,8 @@ p {
         cursor: pointer;
         position: absolute;
         left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1001;
+        top: 15px;
+        z-index: 2001; /* Ensure it's above other elements */
     }
     .menu-overlay {
         display: none; /* Hidden by default */
@@ -271,10 +287,6 @@ p {
         height: 100vh;
         background: rgba(0, 0, 0, 0.2); /* Slight background dim */
         z-index: 999; /* Below the menu but above content */
-    }
-
-    .menu-overlay.active {
-        display: block;
     }
 
     /* Hide the full nav bar */

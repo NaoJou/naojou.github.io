@@ -96,6 +96,22 @@ line-height: 1;
     color: var(--text-dark);
 }
 
+/* General link color */
+a {
+    color: var(--accent-blue); /* Replace with your actual variable or HEX code */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Hover effect */
+a:hover {
+    color: var(--accent-pink); /* Change to another color on hover if needed */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+/* Visited link color (so it doesn’t turn purple) */
+a:visited {
+    color: var(--accent-blue); /* Keeps it consistent */
+}
 
 
 /* Social Icons */

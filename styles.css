@@ -273,7 +273,7 @@ font-size: 1.1em;
 
 /* === Game Box Layout === */
 .game-box {
-  width: 60%;
+  width: 65%;
   margin: 40px auto;
   background-color: transparent; /* Fully transparent */
   border: 2px solid var(--nav-orange);

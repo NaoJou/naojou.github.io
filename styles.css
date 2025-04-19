@@ -272,7 +272,7 @@ font-size: 1.1em;
   justify-content: center;
   gap: 30px;
   padding: 20px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .game-content video {

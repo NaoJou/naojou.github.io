@@ -293,9 +293,12 @@ font-size: 1.1em;
 .play-link {
   display: inline-block;
   font-weight: bold;
-  color: #007acc;
+  color: var(--text-dark);
   text-decoration: none;
   margin-bottom: 1rem;
+}
+.play-link-wrapper {
+  margin-bottom: 0.3rem; /* Reduce spacing before the next paragraph */
 }
 
 .play-link:hover {

@@ -271,47 +271,73 @@ font-size: 1.1em;
     }
 }
 
-/* === Calysto Project Entry === */
-.project-entry {
+/* === Game Box Layout === */
+.game-box {
+  width: 80%;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.4); /* light translucent box */
+  border: 2px solid var(--accent-pink);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.title-bar {
+  background-color: var(--nav-orange);
+  color: var(--text-dark);
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-pink);
+}
+
+.game-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
   align-items: flex-start;
 }
 
-.video-column {
-  flex: 1 1 45%;
-  min-width: 300px;
+.game-content video {
+  flex: 1 1 350px;
+  max-width: 500px;
+  border-radius: 10px;
 }
 
-.info-column {
-  flex: 1 1 45%;
-  min-width: 300px;
+.game-info {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.play-link-wrapper {
+  margin-bottom: 0.5rem;
 }
 
 .play-link {
-  display: inline-block;
   font-weight: bold;
-  color: var(--text-dark);
   text-decoration: none;
-  margin-bottom: 1rem;
-}
-.play-link-wrapper {
-  margin-bottom: 0.3rem; /* Reduce spacing before the next paragraph */
+  color: var(--text-dark);
 }
 
 .play-link:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 600px) {
-  .project-entry {
+
+@media screen and (max-width: 768px) {
+  .game-content {
     flex-direction: column;
+    align-items: center;
+    padding: 15px;
   }
 
-  .video-column,
-  .info-column {
+  .game-content video,
+  .game-info {
     width: 100%;
+    max-width: 100%;
   }
 }
 

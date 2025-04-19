@@ -6,12 +6,12 @@
 --accent-blue: #c6e8f9;
 --text-dark: #a2d0ea;
 --text-blue: #e9f5fb;
-    --main-container-width: 65%;
-  --main-container-width-tablet: 80%;
-  --main-container-width-mobile: 100%;
-  --content-width: 60%;
-  --content-width-tablet: 75%;
-  --content-width-mobile: 95%;
+--main-container-width: 65%;
+--main-container-width-tablet: 80%;
+--main-container-width-mobile: 100%;
+--content-width: 60%;
+--content-width-tablet: 75%;
+--content-width-mobile: 95%;
 }
 
 body {
@@ -32,24 +32,22 @@ height: 220px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center; /* Centering dynamically */
+align-items: center;
 position: relative;
 }
 
-/* Title (Naomi Jouan Game Design) */
 .header-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: fit-content; 
-    position: absolute;
-    bottom: 5px; 
-    left: 17.5%; 
-    text-align: left; 
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: fit-content;
+position: absolute;
+bottom: 5px;
+left: 17.5%;
+text-align: left;
 }
 
-/* Title Text */
 header h1 {
 margin: 0;
 color: var(--accent-blue);
@@ -68,63 +66,39 @@ color: var(--text-dark);
 line-height: 1;
 }
 
-/* Mode Toggle */
 .mode-toggle {
-    position: absolute;
-    bottom: -30px; /* Moves it below the icons */
-    right: 21%; /* Align with the social icons */
-    font-size: 1.1em;
-    font-weight: 600;
-    font-family: 'Dosis', sans-serif;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    width: 140px; /* Keeps it centered below icons */
-    white-space: nowrap;
+position: absolute;
+bottom: -30px;
+right: 21%;
+font-size: 1.1em;
+font-weight: 600;
+font-family: 'Dosis', sans-serif;
+display: flex;
+gap: 8px;
+align-items: center;
+justify-content: center;
+width: 140px;
+white-space: nowrap;
 }
 
 .mode-toggle button {
-    background: none;
-    border: none;
-    color: var(--accent-blue);
-    font-family: 'Dosis', sans-serif;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.mode-toggle button {
-    font-size: 1.15em;
-    font-weight: 700; /* Make it more readable */
+background: none;
+border: none;
+color: var(--accent-blue);
+font-family: 'Dosis', sans-serif;
+cursor: pointer;
+transition: color 0.3s;
+font-size: 1.15em;
+font-weight: 700;
 }
 
 .mode-toggle button:hover {
-    color: var(--text-dark);
+color: var(--text-dark);
 }
 
-/* General link color */
-a {
-    color: var(--accent-blue); /* Replace with your actual variable or HEX code */
-    text-decoration: none; /* Optional: Removes underline */
-}
-
-/* Hover effect */
-a:hover {
-    color: var(--accent-pink); /* Change to another color on hover if needed */
-    text-decoration: underline; /* Optional: Adds underline on hover */
-}
-
-/* Visited link color (so it doesn’t turn purple) */
-a:visited {
-    color: var(--accent-blue); /* Keeps it consistent */
-}
-
-
-/* Social Icons */
 .social-icons {
 position: absolute;
-bottom: 30px; /* Adjust for spacing */
-bottom: 40px; /* Adjust for spacing */
+bottom: 40px;
 right: 17.5%;
 display: flex;
 gap: 10px;
@@ -137,13 +111,12 @@ object-fit: contain;
 transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Navigation Bar */
 nav {
 background-color: var(--nav-darkerblue);
 padding: 15px 0;
 text-align: center;
 border-radius: 0px 0px 10px 10px;
-width: 65%;
+width: var(--main-container-width);
 margin: 0 auto;
 }
 
@@ -170,27 +143,18 @@ text-transform: uppercase;
 transition: color 0.3s;
 }
 
-nav ul li a:hover {
-color: var(--accent-blue);
-}
-
+nav ul li a:hover,
 nav ul li a.active {
 color: var(--accent-blue);
 }
 
-/* Main Section */
-main {
-width: 60%;
+main,
+section {
+width: var(--content-width);
 margin: 0 auto;
 text-align: justify;
 }
 
-section {
-width: 60%;
-margin: 30px auto;
-}
-
-/* Headings */
 h2 {
 font-family: 'Jost', sans-serif;
 font-weight: 300;
@@ -203,134 +167,109 @@ font-family: 'Jost', sans-serif;
 font-weight: 400;
 font-size: 1.5em;
 color: var(--accent-blue);
-margin-top: 5px; /* Reduced spacing */
+margin-top: 5px;
 }
 
-/* Text */
 p {
 font-size: 1.2em;
 line-height: 1.6;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-header {
-height: 180px;
-padding-left: 60px;
-}
-
-header h1 {
-font-size: 2.8em;
-}
-
-header h2 {
-font-size: 2em;
-}
-
-.social-icons {
-bottom: 15px;
-right: 11%;
-display: flex;
-gap: 10px;
-}
-
-.mode-toggle {
-    bottom: -10px;
-    font-size: 1em; /* Slightly smaller for mid-sized screens */
-    right: 11%; /* Adjust for better alignment */
-}
-
-.mode-toggle button {
-    font-size: 1em;
-}
-
-nav {
-width: 80%;
-}
-
-nav ul {
-gap: 20px;
-}
-
-section {
-width: 75%;
-}
-
-p {
-font-size: 1.1em;
-}
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    nav ul {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: center; 
-        gap: 10px;
-    }
-
-    nav ul li a {
-        font-size: 1em; 
-        padding: 3px 5px; 
-    }
-
-    .social-icons {
-        bottom: 20px;
-        right: 9%; /* Keeps icons aligned with navbar */
-    }
-    .mode-toggle {
-        bottom: -10px; 
-        font-size: 0.9em;
-        right: 5%;
-    }
-
-    .mode-toggle button {
-        font-size: 0.9em;
-    }
-}
-
-/* === Calysto Project Entry === */
-.project-entry {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  align-items: flex-start;
-}
-
-.video-column {
-  flex: 1 1 45%;
-  min-width: 300px;
-}
-
-.info-column {
-  flex: 1 1 45%;
-  min-width: 300px;
-}
-
 .play-link {
-  display: inline-block;
-  font-weight: bold;
-  color: var(--accent-blue);
-  text-decoration: none;
-  margin-bottom: 1rem;
+display: inline-block;
+font-weight: bold;
+color: var(--accent-blue);
+text-decoration: none;
+margin-bottom: 1rem;
 }
 
 .play-link:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
-@media screen and (max-width: 600px) {
-  .project-entry {
-    flex-direction: column;
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 180px;
+    padding-left: 60px;
   }
 
-  .video-column,
-  .info-column {
-    width: 100%;
+  header h1 {
+    font-size: 2.8em;
+  }
+
+  header h2 {
+    font-size: 2em;
+  }
+
+  .social-icons {
+    bottom: 15px;
+    right: 11%;
+  }
+
+  .mode-toggle {
+    bottom: -10px;
+    font-size: 1em;
+    right: 11%;
+  }
+
+  .mode-toggle button {
+    font-size: 1em;
+  }
+
+  nav,
+  .game-box {
+    width: var(--main-container-width-tablet);
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  section,
+  main {
+    width: var(--content-width-tablet);
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: var(--main-container-width-mobile);
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+    padding: 3px 5px;
+  }
+
+  .social-icons {
+    bottom: 20px;
+    right: 9%;
+  }
+
+  .mode-toggle {
+    bottom: -10px;
+    font-size: 0.9em;
+    right: 5%;
+  }
+
+  .mode-toggle button {
+    font-size: 0.9em;
+  }
+
+  section,
+  main {
+    width: var(--content-width-mobile);
   }
 }

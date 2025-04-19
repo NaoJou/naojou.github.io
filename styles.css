@@ -301,3 +301,14 @@ font-size: 1.1em;
 .play-link:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+  .project-entry {
+    flex-direction: column;
+  }
+
+  .video-column,
+  .info-column {
+    width: 100%;
+  }
+}
+

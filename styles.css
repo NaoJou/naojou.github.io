@@ -275,11 +275,10 @@ font-size: 1.1em;
 .game-box {
   width: 80%;
   margin: 40px auto;
-  background-color: rgba(255, 255, 255, 0.4); /* light translucent box */
-  border: 2px solid var(--accent-pink);
+  background-color: transparent; /* Fully transparent */
+  border: 2px solid var(--nav-orange);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .title-bar {
@@ -290,7 +289,7 @@ font-size: 1.1em;
   font-size: 1.8em;
   padding: 10px 20px;
   text-align: center;
-  border-bottom: 2px solid var(--accent-pink);
+  border-bottom: 2px solid var(--nav-orange);
 }
 
 .game-content {

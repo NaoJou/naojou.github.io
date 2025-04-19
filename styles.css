@@ -8,6 +8,9 @@
 --main-container-width: 65%;
 --main-container-width-tablet: 80%;
 --main-container-width-mobile: 100%;
+--content-width: 60%;
+--content-width-tablet: 75%;
+--content-width-mobile: 95%;
 }
 
 body {
@@ -346,3 +349,22 @@ font-size: 1.1em;
   }
 }
 
+main,
+section {
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  main,
+  section {
+    width: var(--content-width-tablet);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  section {
+    width: var(--content-width-mobile);
+  }
+}

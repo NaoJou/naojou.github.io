@@ -270,3 +270,34 @@ font-size: 1.1em;
         font-size: 0.9em;
     }
 }
+
+/* === Calysto Project Entry === */
+.project-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.video-column {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.info-column {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.play-link {
+  display: inline-block;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.play-link:hover {
+  text-decoration: underline;
+}

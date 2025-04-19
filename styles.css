@@ -293,7 +293,7 @@ font-size: 1.1em;
 .play-link {
   display: inline-block;
   font-weight: bold;
-  color: #007acc;
+  color: var(--text-dark);
   text-decoration: none;
   margin-bottom: 1rem;
 }

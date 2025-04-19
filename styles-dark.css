@@ -175,17 +175,86 @@ font-size: 1.2em;
 line-height: 1.6;
 }
 
+
+/* === Game Box Layout === */
+.game-box {
+  width: var(--main-container-width);
+  margin: 40px auto;
+  background-color: transparent; /* Keep it transparent */
+  border: 2px solid var(--nav-blue); /* Match dark border color */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.title-bar {
+  background-color: rgba(94, 131, 162, 0.5); /* nav-blue with opacity */
+  color: var(--accent-blue); /* Title text color */
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  padding: 6px 20px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.game-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.game-content video {
+  flex: 1 1 350px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.game-info {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.play-link-wrapper {
+  margin-bottom: 0.5rem;
+}
+
 .play-link {
-display: inline-block;
-font-weight: bold;
-color: var(--accent-blue);
-text-decoration: none;
-margin-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--accent-blue);
 }
 
 .play-link:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+  .game-box {
+    width: var(--main-container-width-tablet);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .game-box {
+    width: var(--main-container-width-mobile);
+  }
+
+  .game-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .game-content video,
+  .game-info {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   header {

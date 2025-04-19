@@ -282,12 +282,13 @@ font-size: 1.1em;
 }
 
 .title-bar {
-  background-color: var(--nav-orange);
-  color: var(--text-dark);
+  background-color: rgba(248, 180, 155, 0.5);
+  color: var(--nav-orange);
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.6em;
   padding: 10px 20px;
+    margin-top: 12px;
   text-align: center;
   border-bottom: 2px solid var(--nav-orange);
 }

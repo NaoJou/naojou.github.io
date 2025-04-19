@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Naomi Jouan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Game Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link id="themeStylesheet" rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <div class="header-title">
-        <h1>NAOMI JOUAN</h1>
-        <h2>GAME DESIGN</h2>
-    </div>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://naomijouan.itch.io" target="_blank">
-            <img src="assets/itchio-icon.png" alt="Itch.io">
-        </a>
-    </div>
+<div class="header-title">
+<h1>NAOMI JOUAN</h1>
+<h2>GAME DESIGN</h2>
+</div>
+
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
+<img id="linkedin-icon" src="assets/linkedin-icon.png" alt="LinkedIn">
+</a>
+<a href="https://naomijouan.itch.io" target="_blank">
+<img id="itchio-icon" src="assets/itchio-icon.png" alt="Itch.io">
+</a>
+<div class="mode-toggle">
+    <span>Modes:</span>
+    <button id="happyMode">Happy</button> /
+    <button id="darkMode">Dark</button>
+</div>
+</div>
 </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="resume.html" class="active">RESUME</a></li>
-            <li><a href="videogames.html">VIDEOGAMES</a></li>
-            <li><a href="boardgames.html">BOARDGAMES</a></li>
-            <li><a href="narration.html">NARRATION</a></li>
-            <li><a href="other.html">OTHER</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="resume.html" class="active">RESUME</a></li>
+        <li><a href="videogames.html">VIDEOGAMES</a></li>
+        <li><a href="boardgames.html">BOARDGAMES</a></li>
+        <li><a href="narration.html">NARRATION</a></li>
+        <li><a href="other.html">OTHER</a></li>
+    </ul>
+</nav>
 
-    <section>
-        <h2>My Resume</h2>
-        <p>Here you can find my professional experience and skills.</p>
-    </section>
+<section id="resume">
+<h2>Resume</h2>
+<p>To see my full resume, you can see my LinkedIn account <a href="https://www.linkedin.com/in/naomi-jouan-63b989335/">here</a>.</p>
+</section>
+    
+<section id="studies">
+<h2>Studies</h2>
+<h3>Game Design DESS</h3>
+<p>...</p>
+<h3>Literary Studies PHD</h3>
+<p>...</p>
+<h3>Literary Studies Master</h3>
+<p>...</p>
+<h3>Literary Studies Bachelor Degree</h3>
+<p>...</p>
+</section>
+
+<section id="jobs">
+<h2>Jobs</h2>
+<h3>Restaurant Manager</h3>
+<p>...</p>
+<h3>Research Assistant</h3>
+<p>...</p>
+<h3>Lecturer</h3>
+<p>...</p>
+</section>
 
 </body>
+<script src="mode-switch.js"></script>
 </html>

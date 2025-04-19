@@ -46,7 +46,7 @@ position: relative;
 /* Title Text */
 header h1 {
 margin: 0;
-color: var(--text-blue);
+color: var(--accent-blue);
 font-size: 3.5em;
 font-family: 'Dosis', sans-serif;
 font-weight: 200;
@@ -96,6 +96,22 @@ line-height: 1;
     color: var(--text-dark);
 }
 
+/* General link color */
+a {
+    color: var(--accent-blue); /* Replace with your actual variable or HEX code */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Hover effect */
+a:hover {
+    color: var(--accent-pink); /* Change to another color on hover if needed */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+/* Visited link color (so it doesn’t turn purple) */
+a:visited {
+    color: var(--accent-blue); /* Keeps it consistent */
+}
 
 
 /* Social Icons */
@@ -270,4 +286,45 @@ font-size: 1.1em;
     .mode-toggle button {
         font-size: 0.9em;
     }
+}
+
+/* === Calysto Project Entry === */
+.project-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.video-column {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.info-column {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.play-link {
+  display: inline-block;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.play-link:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  .project-entry {
+    flex-direction: column;
+  }
+
+  .video-column,
+  .info-column {
+    width: 100%;
+  }
 }

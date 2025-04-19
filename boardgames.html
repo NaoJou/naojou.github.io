@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boardgames - Naomi Jouan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boardgames - Game Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link id="themeStylesheet" rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-    <div class="header-title">
-        <h1>NAOMI JOUAN</h1>
-        <h2>GAME DESIGN</h2>
-    </div>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://naomijouan.itch.io" target="_blank">
-            <img src="assets/itchio-icon.png" alt="Itch.io">
-        </a>
-    </div>
+<header>
+<div class="header-title">
+<h1>NAOMI JOUAN</h1>
+<h2>GAME DESIGN</h2>
+</div>
+
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/naomi-jouan-63b989335" target="_blank">
+<img id="linkedin-icon" src="assets/linkedin-icon.png" alt="LinkedIn">
+</a>
+<a href="https://naomijouan.itch.io" target="_blank">
+<img id="itchio-icon" src="assets/itchio-icon.png" alt="Itch.io">
+</a>
+<div class="mode-toggle">
+    <span>Modes:</span>
+    <button id="happyMode">Happy</button> /
+    <button id="darkMode">Dark</button>
+</div>
+</div>
 </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="videogames.html">VIDEOGAMES</a></li>
-            <li><a href="boardgames.html" class="active">BOARDGAMES</a></li>
-            <li><a href="narration.html">NARRATION</a></li>
-            <li><a href="other.html">OTHER</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="videogames.html">VIDEOGAMES</a></li>
+        <li><a href="boardgames.html" class="active">BOARDGAMES</a></li>
+        <li><a href="narration.html">NARRATION</a></li>
+        <li><a href="other.html">OTHER</a></li>
+    </ul>
+</nav>
 
-    <section>
-        <h2>My Resume</h2>
-        <p>Here you can find my professional experience and skills.</p>
-    </section>
+<section id="boardgames">
+<h2>Boardgames</h2>
+<h3>Ghost Hunters</h3>
+<p>...</p>
+</section>
+
+<section id="ghosthunters">
+<h3>Ghost Hunters</h3>
+<p>...</p>
+</section>
+
+<section id="backstabbing">
+<h3>Backstabbing Bastards</h3>
+<p>...</p>
+</section>
+
+<section id="bermudes">
+<h3>Bermudes à la mort</h3>
+<p>...</p>
+</section>
 
 </body>
+<script src="mode-switch.js"></script>
 </html>

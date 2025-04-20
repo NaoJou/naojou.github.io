@@ -217,6 +217,10 @@ line-height: 1.6;
   max-width: 500px;
 }
 
+.game-info p {
+  margin: 0;
+}
+
 .play-link-wrapper {
   margin-bottom: 0.5rem;
 }

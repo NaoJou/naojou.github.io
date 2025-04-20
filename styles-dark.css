@@ -175,6 +175,13 @@ font-size: 1.2em;
 line-height: 1.6;
 }
 
+/* Image */
+.single-image {
+  flex: 1 1 350px;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 /* === Game Box Layout === */
 .game-box {

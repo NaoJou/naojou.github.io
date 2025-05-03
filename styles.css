@@ -382,6 +382,23 @@ section {
   transform: scale(1.01);
 }
 
+:root {
+  --narration-accent: #E1576A; /* or reuse --accent-pink if it's consistent */
+}
+
+.narrative-project h3 {
+  color: var(--narration-accent);
+}
+
+.narrative-project a {
+  color: var(--narration-accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.narrative-project a:hover {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1024px) {
   main,

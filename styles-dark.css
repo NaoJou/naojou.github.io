@@ -369,6 +369,16 @@ line-height: 1.6;
   border-radius: 10px; /* Optional */
 }
 
+a:link,
+a:visited {
+  color: #a8d8ff; /* or your preferred light blue */
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #ffffff; /* maybe white on hover? */
+}
+
 @media screen and (max-width: 768px) {
   nav {
     width: var(--main-container-width-mobile);

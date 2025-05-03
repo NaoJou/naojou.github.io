@@ -315,10 +315,21 @@ line-height: 1.6;
   }
 }
 
-.pdf-wrapper {
+.resume-image {
+  width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+.resume-image:hover {
+  transform: scale(1.01);
+}
+
 
 @media screen and (max-width: 768px) {
   nav {

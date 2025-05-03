@@ -364,19 +364,19 @@ line-height: 1.6;
 }
 
 .single-image {
-  max-width: 300px;
   height: auto;
   border-radius: 10px; /* Optional */
 }
 
-a:link,
-a:visited {
-  color: #a8d8ff; /* or your preferred light blue */
+section a:link,
+section a:visited {
+  color: #a8d8ff !important; /* light blue and force it */
   text-decoration: underline;
 }
-a:hover,
-a:focus {
-  color: #ffffff; /* maybe white on hover? */
+
+section a:hover,
+section a:focus {
+  color: #ffffff !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -382,6 +382,14 @@ section {
   transform: scale(1.01);
 }
 
+.narrative-project {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--narration-accent);
+  background-color: rgba(255, 255, 255, 0.05); /* translucent for both themes */
+  border-radius: 8px;
+}
+
 :root {
   --narration-accent: #E1576A; /* or reuse --accent-pink if it's consistent */
 }

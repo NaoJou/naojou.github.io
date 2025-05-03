@@ -315,6 +315,11 @@ line-height: 1.6;
   }
 }
 
+.pdf-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     width: var(--main-container-width-mobile);

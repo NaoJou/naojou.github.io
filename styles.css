@@ -416,7 +416,6 @@ section {
 }
 
 .single-image {
-  max-width: 300px;
   height: auto;
   border-radius: 10px; /* Optional */
 }

@@ -356,6 +356,19 @@ line-height: 1.6;
   text-decoration: underline;
 }
 
+.game-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.single-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px; /* Optional */
+}
+
 @media screen and (max-width: 768px) {
   nav {
     width: var(--main-container-width-mobile);

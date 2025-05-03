@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (resumeImage) resumeImage.src = "assets/NaomiJouan_CV_dark.png";
     if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV_dark.pdf";
 
+    const leoncitozeImage = document.getElementById("leoncitozeImage");
+    if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail2.png";
     }
 
     function setHappyMode() {
@@ -31,7 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (resumeImage) resumeImage.src = "assets/NaomiJouan_CV.png";
     if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV.pdf";
-
+        
+    const leoncitozeImage = document.getElementById("leoncitozeImage");
+    if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail.png";
     }
 
     // Apply saved theme on page load

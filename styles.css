@@ -367,6 +367,11 @@ section {
   margin: 0 auto;
 }
 
+.pdf-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
   main,
   section {

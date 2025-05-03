@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (linkedinIcon) linkedinIcon.src = "assets/linkedin-iconblue.png";
         if (itchioIcon) itchioIcon.src = "assets/itchio-iconblue.png";
         localStorage.setItem("theme", "dark");
+        const resumeImage = document.getElementById("resumeImage");
+    const resumeLink = document.getElementById("resumeLink");
+
+    if (resumeImage) resumeImage.src = "assets/NaomiJouan_CV_dark.png";
+    if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV_dark.pdf";
+
     }
 
     function setHappyMode() {
@@ -20,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (linkedinIcon) linkedinIcon.src = "assets/linkedin-icon.png";
         if (itchioIcon) itchioIcon.src = "assets/itchio-icon.png";
         localStorage.setItem("theme", "happy");
+        const resumeImage = document.getElementById("resumeImage");
+    const resumeLink = document.getElementById("resumeLink");
+
+    if (resumeImage) resumeImage.src = "assets/NaomiJouan_CV.png";
+    if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV.pdf";
+
     }
 
     // Apply saved theme on page load

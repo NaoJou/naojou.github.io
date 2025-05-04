@@ -278,54 +278,6 @@ line-height: 1.6;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
-  header {
-    height: 180px;
-    padding-left: 60px;
-  }
-
-  header h1 {
-    font-size: 2.8em;
-  }
-
-  header h2 {
-    font-size: 2em;
-  }
-
-  .social-icons {
-    bottom: 15px;
-    right: 11%;
-  }
-
-  .mode-toggle {
-    bottom: -10px;
-    font-size: 1em;
-    right: 11%;
-  }
-
-  .mode-toggle button {
-    font-size: 1em;
-  }
-
-  nav,
-  .game-box {
-    width: var(--main-container-width-tablet);
-  }
-
-  nav ul {
-    gap: 20px;
-  }
-
-  section,
-  main {
-    width: var(--content-width-tablet);
-  }
-
-  p {
-    font-size: 1.1em;
-  }
-}
-
 .resume-image {
   width: 100%;
   max-width: 900px;
@@ -374,6 +326,58 @@ section a:focus {
   color: #ffffff !important;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    height: 180px;
+    padding-left: 60px;
+  }
+
+  header h1 {
+    font-size: 2.8em;
+  }
+
+  header h2 {
+    font-size: 2em;
+  }
+
+  .social-icons {
+    bottom: 15px;
+    right: 11%;
+  }
+
+  .mode-toggle {
+    bottom: -10px;
+    font-size: 1em;
+    right: 11%;
+  }
+
+  .mode-toggle button {
+    font-size: 1em;
+  }
+
+  nav,
+  .game-box {
+    width: var(--main-container-width-tablet);
+  }
+
+  .game-box {
+  width: var(--main-container-width-tablet);
+   }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  section,
+  main {
+    width: var(--content-width-tablet);
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     width: var(--main-container-width-mobile);
@@ -412,8 +416,8 @@ section a:focus {
     width: var(--content-width-mobile);
   }
 
-    .game-box {
-    width: var(--main-container-width-mobile);
+  .game-box {
+  width: var(--main-container-width-mobile);
   }
 
   .game-content {

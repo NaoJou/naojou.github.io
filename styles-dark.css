@@ -380,6 +380,9 @@ section a:focus {
 }
 .image-wrapper {
   position: relative;
+  width: 35%; 
+  min-width: 200px;
+    flex: 1 1 300px;
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;

@@ -415,10 +415,26 @@ width: var(--main-container-width-tablet);
   section {
     width: var(--content-width-mobile);
   }
+
+    main,
+section,
+.resume-wrapper {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+    
     .game-content {
     flex-direction: column;
     align-items: center; /* Center all children, including image */
   }
+
+    .game-content video,
+.game-content .single-image {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+}
 
   .image-wrapper {
     display: flex;
@@ -430,5 +446,23 @@ width: var(--main-container-width-tablet);
 
   .image-wrapper .single-image {
     max-width: 90%;
+  }
+
+    nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  nav ul li {
+    flex: 1 1 40%; /* allow wrapping to two columns */
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    font-size: 0.95em;
+    padding: 6px 0;
   }
 }

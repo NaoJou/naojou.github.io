@@ -197,14 +197,6 @@ font-size: 1.2em;
 line-height: 1.6;
 }
 
-/* Image */
-.single-image {
-  flex: 1 1 350px;
-  max-width: 500px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
 header {
@@ -359,13 +351,16 @@ section {
 
 /* IMAGE */
 .single-image {
-  height: auto;
-  border-radius: 10px; /* Optional */
+  flex: 1 1 350px;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
 }
-
 .image-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex; /* change this */
+  justify-content: center; /* center image horizontally */
+  align-items: center;
       width: 35%; 
   min-width: 200px;
     flex: 1 1 300px;
@@ -379,6 +374,7 @@ section {
       z-index: 1;
   width: 100%;
   height: auto;
+    position: relative;
   border-radius: 10px;
 }
 

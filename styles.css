@@ -459,4 +459,20 @@ section {
   section {
     width: var(--content-width-mobile);
   }
+    .game-content {
+    flex-direction: column;
+    align-items: center; /* Center all children, including image */
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: none; /* override flex behavior */
+    margin-top: 1rem;
+  }
+
+  .image-wrapper .single-image {
+    max-width: 90%;
+  }
 }

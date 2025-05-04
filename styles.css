@@ -372,7 +372,6 @@ section {
       z-index: 1;
   width: 100%;
   height: auto;
-    position: relative;
   border-radius: 10px;
 }
 

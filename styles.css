@@ -425,6 +425,7 @@ section {
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
+      align-self: center;
 }
 
 .image-wrapper .single-image {

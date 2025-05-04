@@ -103,8 +103,6 @@ line-height: 1;
     color: var(--text-dark);
 }
 
-
-
 /* Social Icons */
 .social-icons {
 position: absolute;
@@ -195,55 +193,6 @@ margin-top: 5px; /* Reduced spacing */
 p {
 font-size: 1.2em;
 line-height: 1.6;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-header {
-height: 180px;
-padding-left: 60px;
-}
-
-header h1 {
-font-size: 2.8em;
-}
-
-header h2 {
-font-size: 2em;
-}
-
-.social-icons {
-bottom: 15px;
-right: 11%;
-display: flex;
-gap: 10px;
-}
-
-.mode-toggle {
-    bottom: -10px;
-    font-size: 1em; /* Slightly smaller for mid-sized screens */
-    right: 11%; /* Adjust for better alignment */
-}
-
-.mode-toggle button {
-    font-size: 1em;
-}
-
-nav {
-width: 80%;
-}
-
-nav ul {
-gap: 20px;
-}
-
-section {
-width: 75%;
-}
-
-p {
-font-size: 1.1em;
-}
 }
 
 /* === Game Box Layout === */
@@ -391,60 +340,62 @@ section {
   opacity: 0;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 1024px) {
-  header {
-    height: 180px;
-    padding-left: 60px;
-  }
-
-  header h1 {
-    font-size: 2.8em;
-  }
-
-  header h2 {
-    font-size: 2em;
-  }
-
-  .social-icons {
-    bottom: 15px;
-    right: 11%;
-    display: flex;
-    gap: 10px;
-  }
-
-  .mode-toggle {
-    bottom: -10px;
-    font-size: 1em;
-    right: 11%;
-  }
-
-  .mode-toggle button {
-    font-size: 1em;
-  }
-
-  nav,
-  .game-box {
-    width: var(--main-container-width-tablet);
-  }
-
-  nav ul {
-    gap: 20px;
-  }
-
-  section {
-    width: 75%;
-  }
-
-  p {
-    font-size: 1.1em;
-  }
+header {
+height: 180px;
+padding-left: 60px;
 }
 
-@media screen and (max-width: 1024px) {
-  main,
-  section {
-    width: var(--content-width-tablet);
-  }
+header h1 {
+font-size: 2.8em;
+}
+
+header h2 {
+font-size: 2em;
+}
+    
+main,
+section {
+width: var(--content-width-tablet);
+}
+    
+.social-icons {
+bottom: 15px;
+right: 11%;
+display: flex;
+gap: 10px;
+}
+
+.mode-toggle {
+    bottom: -10px;
+    font-size: 1em; /* Slightly smaller for mid-sized screens */
+    right: 11%; /* Adjust for better alignment */
+}
+
+.mode-toggle button {
+    font-size: 1em;
+}
+
+nav {
+width: 80%;
+}
+
+nav ul {
+gap: 20px;
+}
+
+section {
+width: 75%;
+}
+
+p {
+font-size: 1.1em;
+}
+nav,
+.game-box {
+width: var(--main-container-width-tablet);
+}
 }
 
 @media screen and (max-width: 768px) {

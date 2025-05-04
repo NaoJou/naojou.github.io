@@ -6,7 +6,7 @@
 --accent-pink: #E1576A;
 --text-dark: #5E4349;
 --narration-accent: #E1576A; 
-    --veil-color: #ddc2cb; 
+    --veil-color: rgba(221, 194, 203, 0.5); 
 --main-container-width: 65%;
 --main-container-width-tablet: 80%;
 --main-container-width-mobile: 100%;

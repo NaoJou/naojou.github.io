@@ -423,6 +423,9 @@ section {
 .image-wrapper {
   position: relative;
   display: inline-block;
+      width: 35%; 
+  min-width: 200px;
+    flex: 1 1 300px;
   border-radius: 10px;
   overflow: hidden;
       align-self: center;

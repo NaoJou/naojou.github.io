@@ -232,6 +232,18 @@ line-height: 1.6;
   border-radius: 10px;
 }
 
+.resume-wrapper {
+  padding: 2rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.resume-wrapper p {
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+}
+
 .game-info {
   flex: 1 1 300px;
   max-width: 500px;

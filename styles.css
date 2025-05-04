@@ -357,13 +357,6 @@ section {
   text-decoration: underline;
 }
 
-.game-content {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 /* IMAGE */
 .single-image {
   height: auto;

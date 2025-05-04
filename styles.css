@@ -356,17 +356,15 @@ section {
   border-radius: 10px;
   object-fit: cover;
 }
+
 .image-wrapper {
   position: relative;
-  display: flex; /* change this */
-  justify-content: center; /* center image horizontally */
-  align-items: center;
-      width: 35%; 
-  min-width: 200px;
-    flex: 1 1 300px;
+  display: inline-block;
+  max-width: 500px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
-      align-self: center;
+  margin: 0 auto;
 }
 
 .image-wrapper .single-image {

@@ -389,13 +389,6 @@ line-height: 1.6;
   text-decoration: underline;
 }
 
-.game-content {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 section a:link,
 section a:visited {
   color: #a8d8ff !important; /* light blue and force it */

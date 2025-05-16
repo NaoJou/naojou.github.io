@@ -33,7 +33,7 @@ height: 220px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center; /* Centering dynamically */
+align-items: center; 
 position: relative;
 }
 

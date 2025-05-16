@@ -52,3 +52,22 @@ document.addEventListener("DOMContentLoaded", function () {
     if (happyModeButton) happyModeButton.addEventListener("click", setHappyMode);
     if (darkModeButton) darkModeButton.addEventListener("click", setDarkMode);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burgerMenu");
+    const mobileNav = document.getElementById("mobileNav");
+
+    if (burger && mobileNav) {
+        burger.addEventListener("click", () => {
+            mobileNav.classList.toggle("show");
+        });
+
+        // Close menu when clicking outside of it
+        document.addEventListener("click", (e) => {
+            if (!mobileNav.contains(e.target) && e.target !== burger) {
+                mobileNav.classList.remove("show");
+            }
+        });
+    }
+});
+

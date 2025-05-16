@@ -509,6 +509,7 @@ section,
         display: block;
         text-align: center;
         font-size: 1.2em;
+        width: 100%;
     }
 
 .mobile-nav {
@@ -547,6 +548,10 @@ section,
 
     .nav-links {
         display: none;
+            flex-direction: column; /* Stack links vertically */
+    align-items: center;    /* Center the links horizontally */
+    width: 100%;
+    padding: 20px 0;
     }
 
     .nav-links.show {

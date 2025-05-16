@@ -198,6 +198,10 @@ nav ul li a.active {
 color: var(--accent-pink);
 }
 
+.separator {
+    display: none; /* Hidden by default */
+}
+
 /* Main Section */
 main {
 width: 60%;
@@ -595,12 +599,13 @@ section,
     padding: 6px 0;
   }
 
-    .separator {
-    width: 80%;
-    height: 1px;
-    background-color: var(--text-dark);
-    margin: 10px auto;
-    opacity: 0.5;
+    .separator.mobile-only {
+display: block;
+        width: 80%;
+        height: 1px;
+        background-color: var(--text-dark);
+        margin: 10px auto;
+        opacity: 0.5;
 }
     
 header {

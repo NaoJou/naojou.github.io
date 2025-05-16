@@ -55,19 +55,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burgerMenu");
-    const mobileNav = document.getElementById("mobileNav");
+    const navLinks = document.getElementById("navLinks");
+    const activePage = document.getElementById("activePage");
 
-    if (burger && mobileNav) {
-        burger.addEventListener("click", () => {
-            mobileNav.classList.toggle("show");
-        });
+    // Toggle menu when clicking burger
+    burger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
 
-        // Close menu when clicking outside of it
-        document.addEventListener("click", (e) => {
-            if (!mobileNav.contains(e.target) && e.target !== burger) {
-                mobileNav.classList.remove("show");
-            }
-        });
-    }
+    // Dynamically update the active page name
+    const pageMap = {
+        "index.html": "ABOUT",
+        "resume.html": "RESUME",
+        "videogames.html": "VIDEOGAMES",
+        "boardgames.html": "BOARDGAMES",
+        "narration.html": "NARRATION"
+    };
+
+    const currentPage = window.location.pathname.split("/").pop();
+    activePage.textContent = pageMap[currentPage] || "ABOUT";
 });
+
 

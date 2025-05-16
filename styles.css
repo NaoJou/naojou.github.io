@@ -498,10 +498,6 @@ section,
     max-width: 90%;
   }
 
-    nav {
-        display: none;
-    }
-
 .burger-menu {
         display: block;
     }

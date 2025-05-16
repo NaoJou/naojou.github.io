@@ -182,6 +182,10 @@ width: 60%;
 margin: 30px auto;
 }
 
+.burger-menu {
+    display: none;
+}
+
 /* Headings */
 h2 {
 font-family: 'Jost', sans-serif;
@@ -460,6 +464,55 @@ section,
   .image-wrapper .single-image {
     max-width: 90%;
   }
+
+    nav {
+        display: none;
+    }
+
+    .burger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: var(--text-dark);
+    z-index: 1000;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--nav-orange);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 60px 20px;
+    z-index: 999;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.mobile-nav.show {
+    display: block;
+}
 
     nav ul {
     flex-wrap: wrap;

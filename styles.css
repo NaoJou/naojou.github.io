@@ -471,9 +471,9 @@ section,
   }
     
 .header-title {
-    position: relative;
-    left: 0;
-    right: 0;
+    position: static !important; 
+    left: auto !important;
+    right: auto;
     margin: 20px auto 0 auto;
     text-align: center;
     width: 100%;

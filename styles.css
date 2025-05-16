@@ -154,8 +154,10 @@ nav {
 
 .nav-links {
     display: flex;
+    justify-content: center; /* Add this to center links */
     gap: 40px;
     list-style: none;
+    width: 100%;
 }
 
 .nav-links li a {

@@ -462,13 +462,17 @@ section,
     align-items: center; /* This centers all child elements */
 }
 
-
-
-.social-icons, .mode-toggle {
+.social-icons {
     position: static;
     justify-content: center;
     margin-top: 15px;
     flex-wrap: wrap;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center;
+}
+
+.mode-toggle {
+    margin-top: 10px; /* Space below the icons */
 }
 
 .social-icons a img {

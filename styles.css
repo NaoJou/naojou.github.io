@@ -483,17 +483,23 @@ section,
 }
 
 .social-icons {
-    position: static;
-    justify-content: center;
-    margin-top: 15px;
-    flex-wrap: wrap;
-    flex-direction: column; /* Stack icons vertically */
-    align-items: center;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
 }
 
 .mode-toggle {
-    margin-top: 10px;
-        gap: 4px; 
+        position: static;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px; /* Reduce space between Modes, Happy, Dark */
+        font-size: 1em;
 }
 
 .social-icons a img {

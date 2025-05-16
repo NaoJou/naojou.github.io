@@ -519,6 +519,16 @@ section,
                 color: var(--text-dark);
     }
 
+    .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 15px; /* You can tweak this if needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .mobile-nav {
     display: none;
     position: fixed;

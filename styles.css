@@ -474,7 +474,7 @@ section,
     position: relative;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     text-align: center;
     width: 100%;
     display: flex;
@@ -485,11 +485,11 @@ section,
 .social-icons {
         position: static;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-top: 15px;
-        gap: 10px;
+        gap: 20px;
 }
 
 .mode-toggle {

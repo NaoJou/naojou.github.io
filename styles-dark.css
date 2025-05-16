@@ -510,13 +510,13 @@ header {
 }
 
 .nav-right {
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    right: 15px;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    transform: translateY(-50%);
 }
 
 .nav-links {

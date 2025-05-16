@@ -473,6 +473,7 @@ section,
 
 .mode-toggle {
     margin-top: 10px; /* Space below the icons */
+  gap: 4px;
 }
 
 .social-icons a img {

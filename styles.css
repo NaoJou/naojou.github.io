@@ -465,16 +465,25 @@ section,
     font-size: 0.95em;
     padding: 6px 0;
   }
+    
+.header-title {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .header-title {
-        position: static;
-        margin-top: 20px;
-        text-align: center;
-        left: 0; /* Neutralize left positioning */
-        width: 100%; /* Expand for better centering */
-    }
+.social-icons, .mode-toggle {
+    position: static;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icons a img {
+    width: 40px; /* Make icons a bit bigger for phones */
+    height: 40px;
+}
 
     .header-title h1 { font-size: 8vw; }
     .header-title h2 { font-size: 6vw; }

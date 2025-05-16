@@ -477,8 +477,8 @@ section,
 }
 
 .social-icons a img {
-    width: 40px; /* Make icons a bit bigger for phones */
-    height: 40px;
+    width: 30px; /* Make icons a bit bigger for phones */
+    height: 30px;
 }
 
     .header-title h1 { font-size: 8vw; }

@@ -1,4 +1,4 @@
-f/* Global styles */
+/* Global styles */
 :root {
 --primary-green: #7AA38C;
 --background-cream: #FEF3C7;
@@ -585,6 +585,14 @@ section,
     padding: 6px 0;
   }
 
+    .separator {
+    width: 80%;
+    height: 1px;
+    background-color: var(--text-dark);
+    margin: 10px auto;
+    opacity: 0.5;
+}
+    
 header {
     height: auto;
     min-height: 150px;

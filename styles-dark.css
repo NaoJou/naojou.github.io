@@ -447,8 +447,9 @@ section,
   }
 
    .header-title {
-        position: relative; /* Force it to flow normally */
+        position: relative;
         left: 0;
+        right: 0; /* Ensures it doesn't stick to the left */
         bottom: auto;
         margin: 0 auto;
         text-align: center;

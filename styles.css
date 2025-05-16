@@ -500,12 +500,17 @@ section,
   }
 
 .burger-menu {
-        display: block;
-    font-size: 1.5em; 
+       display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--text-dark);
+    align-self: flex-end; 
     }
 
     nav {
-    padding: 8px 15px; /* Reduced vertical padding */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 8px 15px;
 }
     
     .nav-center {
@@ -513,6 +518,7 @@ section,
         text-align: center;
         font-size: 1.2em;
         width: 100%;
+            margin-bottom: 10px;
     }
 
 .mobile-nav {
@@ -552,9 +558,11 @@ section,
     .nav-links {
     display: none;
     flex-direction: column; /* Stack links vertically */
-    align-items: center;    /* Center the links horizontally */
+    align-items: center;   
+    background-color: var(--nav-orange);
     width: 100%;
     padding: 20px 0;
+            gap: 15px;
     }
 
     .nav-links.show {

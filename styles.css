@@ -82,7 +82,7 @@ line-height: 1;
 .mode-toggle {
     position: absolute;
     bottom: 10px; /* Moves it below the icons */
-    right: 18%; /* Align with the social icons */
+    right: 19%; /* Align with the social icons */
     font-size: 1.1em;
     font-weight: 600;
     font-family: 'Dosis', sans-serif;

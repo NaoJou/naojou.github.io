@@ -500,6 +500,10 @@ section,
         display: block;
     }
 
+    nav {
+    padding: 8px 15px; /* Reduced vertical padding */
+}
+    
     .nav-center {
         display: block;
         text-align: center;

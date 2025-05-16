@@ -396,6 +396,10 @@ section a:focus {
     width: var(--content-width-mobile);
   }
 
+   body {
+    font-size: 14px; 
+}
+
     main,
 section,
 .resume-wrapper {

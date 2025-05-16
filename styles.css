@@ -523,14 +523,14 @@ section,
                 color: var(--text-dark);
     }
 
-    .nav-right {
+.nav-right {
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    right: 15px;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    right: 15px; /* You can tweak this if needed */
-    top: 0;
-    transform: translateY(-50%);
 }
 
 .mobile-nav {

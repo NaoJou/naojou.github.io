@@ -493,8 +493,8 @@ section,
     p, nav ul li a { font-size: 1.5em; }
 
     .game-content video, .single-image, .resume-image {
-        width: 100% !important;
-        max-width: none !important;
-        height: auto;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
     }
 }

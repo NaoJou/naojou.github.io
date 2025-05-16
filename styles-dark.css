@@ -68,19 +68,28 @@ color: var(--text-dark);
 line-height: 1;
 }
 
+.header-controls {
+  position: absolute;
+  right: 17.5%;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .mode-toggle {
-position: absolute;
-bottom: -30px;
-right: 21%;
-font-size: 1.1em;
-font-weight: 600;
-font-family: 'Dosis', sans-serif;
-display: flex;
-gap: 8px;
-align-items: center;
-justify-content: center;
-width: 140px;
-white-space: nowrap;
+    position: absolute;
+    bottom: 10px; /* Moves it below the icons */
+    right: 18.8%; /* Align with the social icons */
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 140px; /* Keeps it centered below icons */
+    white-space: nowrap;
 }
 
 .mode-toggle button {
@@ -91,7 +100,7 @@ font-family: 'Dosis', sans-serif;
 cursor: pointer;
 transition: color 0.3s;
 font-size: 1.15em;
-font-weight: 700;
+font-weight: 700;8
 }
 
 .mode-toggle button:hover {
@@ -100,6 +109,7 @@ color: var(--text-dark);
 
 .social-icons {
 position: absolute;
+bottom: 30px;
 bottom: 40px;
 right: 17.5%;
 display: flex;
@@ -114,12 +124,44 @@ transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 nav {
-background-color: var(--nav-darkerblue);
-padding: 15px 0;
-text-align: center;
-border-radius: 0px 0px 10px 10px;
-width: var(--main-container-width);
-margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-darkerblue);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-center {
+    display: none;
+}
+
+.separator {
+    display: none; /* Hidden by default */
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Add this to center links */
+    gap: 40px;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
 }
 
 nav ul {
@@ -152,24 +194,9 @@ color: var(--accent-blue);
 
 .burger-menu {
     display: none;
-    font-size: 1.2em;
+    font-size: 2em;
     cursor: pointer;
     color: var(--text-dark);
-    align-self: flex-end;
-}
-
-.nav-center {
-    display: none;
-}
-
-.separator {
-    display: none; /* Hidden by default */
-}
-
-.nav-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 main,
@@ -492,14 +519,20 @@ header {
     justify-content: center;
   }
 
-  .burger-menu {
-    display: block;
+.burger-menu {
+       display: block;
     font-size: 1.2em;
     cursor: pointer;
     color: var(--text-dark);
-    align-self: flex-end;
-}
+    align-self: flex-end; 
+    }
 
+  nav {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 5px 15px;
+}
+    
 .nav-center {
     display: block;
     text-align: center;

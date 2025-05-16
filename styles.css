@@ -415,7 +415,11 @@ width: var(--main-container-width-tablet);
   section {
     width: var(--content-width-mobile);
   }
-
+    
+ body {
+    font-size: 14px; 
+}
+    
     main,
 section,
 .resume-wrapper {

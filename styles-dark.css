@@ -447,10 +447,12 @@ section,
   }
 
    .header-title {
-    position: static;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
+        position: relative; /* Force it to flow normally */
+        left: 0;
+        bottom: auto;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
 }
 
 .social-icons, .mode-toggle {
@@ -470,7 +472,7 @@ section,
 
     main, section, .game-info { width: 95%; }
 
-    p, nav ul li a { font-size: 1.5em; }
+    p, nav ul li a { font-size: 1.1em; }
 
     .game-content video, .single-image, .resume-image {
         width: 100% !important;

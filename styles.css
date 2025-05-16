@@ -530,7 +530,9 @@ header {
     height: 30px;
 }
 
-    .header-title h1 { font-size: 8vw; }
+    .header-title h1 { 
+        padding-bottom: 3px;
+        font-size: 8vw; }
     .header-title h2 { font-size: 6vw; }
 
     main, section, .game-info { width: 95%; }

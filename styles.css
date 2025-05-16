@@ -163,7 +163,6 @@ nav {
     color: var(--text-dark);
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
-    display: flex !important;
 }
 
 nav ul {

@@ -511,7 +511,7 @@ section,
     nav {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    padding: 8px 15px;
+    padding: 5px 15px;
 }
     
     .nav-center {

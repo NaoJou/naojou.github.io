@@ -497,6 +497,7 @@ section,
 
 .resume-image {
     margin: 1rem auto; /* Reduce space around the image */
+    margin-bottom: 0rem;
 }
     
     .game-content {

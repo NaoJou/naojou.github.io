@@ -461,7 +461,7 @@ section,
     
     .game-content {
     flex-direction: column;
-    align-items: center; /* Center all children, including image */
+    align-items: flex-start; /* Center all children, including image */
   }
 
     .game-content video,
@@ -471,6 +471,14 @@ section,
   height: auto;
 }
 
+      .game-box {
+    padding-bottom: 0px; /* Reduce the bottom padding inside the box */
+}
+
+.game-info p:last-child {
+    margin-bottom: 0; /* Remove extra margin from the last paragraph */
+}
+  
   .image-wrapper {
     display: flex;
     justify-content: center;

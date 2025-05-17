@@ -475,10 +475,13 @@ section,
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
     
     .game-content {
     flex-direction: column;
+        padding-bottom: 10px;
     align-items: center; /* Center all children, including image */
   }
 
@@ -490,7 +493,7 @@ section,
 }
 
     .game-box {
-    padding-bottom: 10px; /* Reduce the bottom padding inside the box */
+    padding-bottom: 0px; /* Reduce the bottom padding inside the box */
 }
 
 .game-info p:last-child {

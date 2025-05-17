@@ -482,6 +482,10 @@ section,
     align-items: center; /* Center all children, including image */
   }
 
+    .game-box {
+    margin: 20px auto; /* Reduce top and bottom margins for mobile */
+}
+
     .game-content video,
 .game-content .single-image {
   width: 100% !important;

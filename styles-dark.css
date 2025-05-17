@@ -478,7 +478,7 @@ section,
     margin-bottom: 5px;
 }
 
-  #resume.game-box {
+  game-box {
     margin: 20px auto; /* Adjust 20px to match the exact spacing of #about */
 }
     .resume-wrapper {

@@ -574,7 +574,7 @@ section,
     background-color: var(--nav-orange);
     width: 100%;
     padding: 20px 0;
-            gap: 15px;
+            gap: 10px;
     }
 
     .nav-links.show {

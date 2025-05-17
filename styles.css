@@ -483,6 +483,10 @@ section,
     margin-top: 5px;
         margin-bottom: 5px;
 }
+
+      #about h2:last-of-type {
+    margin-bottom: 5px;
+}
     
     .game-content {
     display: flex;

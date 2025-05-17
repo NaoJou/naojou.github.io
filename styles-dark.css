@@ -402,8 +402,8 @@ section a:focus {
   }
 
   .social-icons {
-    bottom: 20px;
-    right: 13%;
+    bottom: 30px;
+    right: 7%;
   }
 
   .mode-toggle {
@@ -416,16 +416,12 @@ section a:focus {
     font-size: 1em;
   }
 
-  nav {
+nav, .game-box {
     width: var(--main-container-width-tablet);
-  }
-
-  .game-box {
-        width: 90%; /* Or adjust based on your visual preference */
-        margin: 30px auto; /* Same margin top and bottom */
-        padding: 30px; /* Equal padding inside the box */
-        box-sizing: border-box;
-   }
+    margin: 40px auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
 
   nav ul {
     gap: 20px;

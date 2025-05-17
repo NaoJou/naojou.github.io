@@ -402,12 +402,12 @@ section a:focus {
   }
 
   .social-icons {
-    bottom: 15px;
+    bottom: 12px;
     right: 11%;
   }
 
   .mode-toggle {
-    bottom: 0px;
+    bottom: 5px;
     font-size: 1em;
     right: 11%;
   }

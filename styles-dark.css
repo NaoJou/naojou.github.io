@@ -419,10 +419,14 @@ section a:focus {
   nav {
     width: 80%;
   }
-  
+
   .game-box {
     width: var(--main-container-width-tablet);
   }
+
+  .resume-image {
+  margin-bottom: 0rem;
+}
 
   nav ul {
     gap: 20px;

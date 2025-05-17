@@ -416,7 +416,10 @@ section a:focus {
     font-size: 1em;
   }
 
-  nav,
+  nav {
+    width: 75%;
+  }
+  
   .game-box {
     width: var(--main-container-width-tablet);
   }

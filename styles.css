@@ -481,6 +481,7 @@ section,
 
     #about h2:first-of-type {
     margin-top: 10px;
+        margin-bottom: 5px;
 }
     
     .game-content {

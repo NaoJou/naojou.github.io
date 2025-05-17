@@ -422,8 +422,8 @@ width: var(--content-width-tablet);
     
 .social-icons {
     position: absolute;
-bottom: 12px;
-right: 11%;
+bottom: 20px;
+right: 13%;
 display: flex;
 gap: 10px;
 }

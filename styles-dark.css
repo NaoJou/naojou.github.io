@@ -481,7 +481,7 @@ section,
 }
 
   game-box {
-    margin: 10px auto; /* Adjust 20px to match the exact spacing of #about */
+    margin: 0px auto; /* Adjust 20px to match the exact spacing of #about */
 }
     .resume-wrapper {
     padding: 1.5rem 1rem; /* Less top/bottom padding */

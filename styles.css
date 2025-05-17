@@ -421,7 +421,7 @@ width: var(--content-width-tablet);
 }
     
 .social-icons {
-    position: relative;
+    position: absolute;
 bottom: 15px;
 right: 11%;
 display: flex;
@@ -429,13 +429,8 @@ gap: 10px;
 }
 
 .mode-toggle {
-position: relative;  /* Change from absolute to relative */
-    margin-top: 20px;    /* Add space under the social icons */
-    right: auto;
-    bottom: auto;
+    bottom: 0px;
     font-size: 1em;
-    display: flex;
-    justify-content: center;
     right: 11%;
 }
 
@@ -531,7 +526,7 @@ section,
 
 .nav-right {
     position: absolute;
-    top: 25px; 
+    top: 20px; 
     right: 15px;
     transform: translateY(-50%);
     display: flex;
@@ -579,7 +574,7 @@ section,
     align-items: center;   
     background-color: var(--nav-orange);
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
             gap: 10px;
     }
 

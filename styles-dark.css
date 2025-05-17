@@ -416,13 +416,15 @@ section a:focus {
     font-size: 1em;
   }
 
-  nav,
-  .game-box {
+  nav {
     width: var(--main-container-width-tablet);
   }
 
   .game-box {
-  width: var(--main-container-width-tablet);
+        width: 90%; /* Or adjust based on your visual preference */
+        margin: 40px auto; /* Same margin top and bottom */
+        padding: 40px; /* Equal padding inside the box */
+        box-sizing: border-box;
    }
 
   nav ul {

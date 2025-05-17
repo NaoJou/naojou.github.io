@@ -547,7 +547,7 @@ header {
 
 .nav-right {
     position: absolute;
-    top: 20px; /* Centers vertically */
+    top: 19px; /* Centers vertically */
     right: 15px;
     transform: translateY(-50%);
     display: flex;

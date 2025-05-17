@@ -461,7 +461,7 @@ section,
     
     .game-content {
     flex-direction: column;
-    align-items: flex-start; /* Center all children, including image */
+    align-items: center; /* Center all children, including image */
   }
 
     .game-content video,

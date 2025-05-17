@@ -467,6 +467,10 @@ section,
   #about h2:last-of-type {
     margin-bottom: 5px;
 }
+
+  #resume.game-box {
+    margin: 20px auto; /* Adjust 20px to match the exact spacing of #about */
+}
     
     .game-content {
     display: flex;

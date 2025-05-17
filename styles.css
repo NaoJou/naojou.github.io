@@ -421,6 +421,7 @@ width: var(--content-width-tablet);
 }
     
 .social-icons {
+    position: relative;
 bottom: 15px;
 right: 11%;
 display: flex;
@@ -428,9 +429,14 @@ gap: 10px;
 }
 
 .mode-toggle {
-    bottom: -10px;
-    font-size: 1em; /* Slightly smaller for mid-sized screens */
-    right: 11%; /* Adjust for better alignment */
+position: relative;  /* Change from absolute to relative */
+    margin-top: 20px;    /* Add space under the social icons */
+    right: auto;
+    bottom: auto;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    right: 11%;
 }
 
 .mode-toggle button {

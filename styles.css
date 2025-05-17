@@ -604,7 +604,7 @@ display: block;
         width: 80%;
         height: 1px;
         background-color: var(--text-dark);
-        margin: 5px auto;
+        margin: 0px auto;
         opacity: 0.5;
 }
     

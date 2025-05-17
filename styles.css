@@ -481,7 +481,7 @@ section,
     
     .game-content {
     flex-direction: column;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     align-items: center; /* Center all children, including image */
   }
 

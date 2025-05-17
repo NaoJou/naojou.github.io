@@ -407,7 +407,7 @@ section a:focus {
   }
 
   .mode-toggle {
-    bottom: -10px;
+    bottom: 0px;
     font-size: 1em;
     right: 11%;
   }
@@ -429,7 +429,10 @@ section a:focus {
     gap: 20px;
   }
 
-  section,
+  section {
+width: 75%;
+}
+  
   main {
     width: var(--content-width-tablet);
   }
@@ -538,13 +541,13 @@ header {
     text-align: center;
     font-size: 1.2em;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     color: var(--text-dark);
 }
 
 .nav-right {
     position: absolute;
-    top: 0; /* Centers vertically */
+    top: 20px; /* Centers vertically */
     right: 15px;
     transform: translateY(-50%);
     display: flex;
@@ -558,8 +561,8 @@ header {
     align-items: center;
     background-color: var(--nav-darkerblue);
     width: 100%;
-    padding: 20px 0;
-    gap: 15px;
+    padding: 5px 0;
+    gap: 10px;
 }
 
 .nav-links.show {
@@ -571,7 +574,7 @@ header {
     width: 80%;
     height: 1px;
     background-color: var(--text-dark);
-    margin: 5px auto;
+    margin: 0px auto;
     opacity: 0.5;
 }
   

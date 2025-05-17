@@ -422,8 +422,8 @@ width: var(--content-width-tablet);
     
 .social-icons {
     position: absolute;
-bottom: 20px;
-right: 13%;
+bottom: 30px;
+right: 7%;
 display: flex;
 gap: 10px;
 }
@@ -438,8 +438,11 @@ gap: 10px;
     font-size: 1em;
 }
 
-nav {
-width: 80%;
+nav, .game-box {
+    width: var(--main-container-width-tablet);
+    margin: 40px auto;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -452,10 +455,6 @@ width: 75%;
 
 p {
 font-size: 1.1em;
-}
-nav,
-.game-box {
-width: var(--main-container-width-tablet);
 }
 }
 
@@ -526,7 +525,7 @@ section,
 
 .nav-right {
     position: absolute;
-    top: 17.3px; 
+    top: 17.2px; 
     right: 15px;
     transform: translateY(-50%);
     display: flex;

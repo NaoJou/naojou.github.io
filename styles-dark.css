@@ -458,6 +458,10 @@ section,
   max-width: 100%;
   box-sizing: border-box;
 }
+
+      #about h2:first-of-type {
+    margin-top: 5px;
+}
     
     .game-content {
     display: flex;

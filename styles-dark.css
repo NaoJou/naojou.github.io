@@ -427,6 +427,8 @@ section a:focus {
       .game-content, .game-info {
         padding-left: 0rem;
         padding-right: 0rem;
+        padding: 0px;
+        max-width: 100%;
         box-sizing: border-box;
     }
   

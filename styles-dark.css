@@ -422,8 +422,8 @@ section a:focus {
 
   .game-box {
         width: 90%; /* Or adjust based on your visual preference */
-        margin: 40px auto; /* Same margin top and bottom */
-        padding: 40px; /* Equal padding inside the box */
+        margin: 30px auto; /* Same margin top and bottom */
+        padding: 30px; /* Equal padding inside the box */
         box-sizing: border-box;
    }
 

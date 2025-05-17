@@ -420,9 +420,27 @@ section a:focus {
     width: 80%;
   }
 
-  .game-box {
-    width: var(--main-container-width-tablet);
-  }
+.game-box {
+    margin: 20px auto; /* Match the resume box margins */
+}
+
+.game-content {
+    padding: 1.5rem 1rem; /* Match resume-wrapper padding */
+    gap: 20px; /* Slightly reduce the gap for tighter content */
+}
+
+.game-info {
+    text-align: center; /* Center text like the resume page */
+    padding: 0 1rem; /* Add horizontal padding to balance content */
+}
+
+.game-info p:last-child {
+    margin-bottom: 0; /* Remove extra space at the end */
+}
+
+.image-wrapper {
+    margin-top: 1rem;
+}
 
   .resume-image {
   margin-bottom: 0rem;

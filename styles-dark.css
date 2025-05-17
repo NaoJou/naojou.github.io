@@ -471,7 +471,14 @@ section,
   #resume.game-box {
     margin: 20px auto; /* Adjust 20px to match the exact spacing of #about */
 }
-    
+    .resume-wrapper {
+    padding: 1.5rem 1rem; /* Less top/bottom padding */
+}
+
+.resume-image {
+    margin: 1rem auto; /* Reduce space around the image */
+}
+
     .game-content {
     display: flex;
     flex-wrap: wrap;

@@ -526,7 +526,7 @@ section,
 
 .nav-right {
     position: absolute;
-    top: 20px; 
+    top: 18px; 
     right: 15px;
     transform: translateY(-50%);
     display: flex;

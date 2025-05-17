@@ -489,6 +489,14 @@ section,
   height: auto;
 }
 
+    .game-box {
+    padding-bottom: 10px; /* Reduce the bottom padding inside the box */
+}
+
+.game-info p:last-child {
+    margin-bottom: 0; /* Remove extra margin from the last paragraph */
+}
+
   .image-wrapper {
     display: flex;
     justify-content: center;

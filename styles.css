@@ -422,14 +422,14 @@ width: var(--content-width-tablet);
     
 .social-icons {
     position: absolute;
-bottom: 15px;
+bottom: 12px;
 right: 11%;
 display: flex;
 gap: 10px;
 }
 
 .mode-toggle {
-    bottom: 0px;
+    bottom: 5px;
     font-size: 1em;
     right: 11%;
 }

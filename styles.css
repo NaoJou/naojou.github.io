@@ -480,9 +480,13 @@ section,
 }
     
     .game-content {
-    flex-direction: column;
-        padding-bottom: 0px;
-    align-items: center; /* Center all children, including image */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Prevent vertical stretching */
+    padding: 20px;
+    gap: 30px;
+    height: auto;
   }
 
     .game-content video,

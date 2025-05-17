@@ -423,16 +423,6 @@ section a:focus {
   .game-box {
     width: var(--main-container-width-tablet);
   }
-
-      .game-content, .game-info {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding: 0px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
   
   .resume-image {
   margin-bottom: 0rem;

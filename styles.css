@@ -453,7 +453,8 @@ gap: 10px;
     }
     
     .game-content video {
-        width: 100%;         
+        width: 100%;
+        padding: 10px;
         max-width: none;    
         flex: none;      
     }

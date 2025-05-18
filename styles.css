@@ -449,6 +449,7 @@ gap: 10px;
     .game-content {
         padding-left: 0px;
         padding-right: 0px;
+        padding: 5px;
     }
 
       .resume-image {

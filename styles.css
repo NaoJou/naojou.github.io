@@ -446,6 +446,11 @@ gap: 10px;
     width: var(--main-container-width-tablet);
   }
 
+    .game-content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
       .resume-image {
   margin-bottom: 0rem;
 }

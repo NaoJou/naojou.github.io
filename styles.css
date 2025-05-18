@@ -446,6 +446,20 @@ gap: 10px;
     width: var(--main-container-width-tablet);
   }
 
+    .game-content {
+        flex-direction: column;
+        align-items: center;
+        width: 95%; 
+        padding: 0; 
+    }
+
+    .game-content video, 
+    .game-info {
+        flex: none;
+        width: 95%;      
+        max-width: none; 
+    }
+
       .resume-image {
   margin-bottom: 0rem;
 }

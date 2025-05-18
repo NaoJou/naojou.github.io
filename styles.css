@@ -450,14 +450,16 @@ gap: 10px;
         flex-direction: column;
         align-items: center;
         width: 95%; 
-        padding: 0; 
+        padding: 10px; 
     }
 
     .game-content video, 
     .game-info {
         flex: none;
+        align-items: center;
         width: 95%;      
         max-width: none; 
+        padding: 10px;
     }
 
       .resume-image {

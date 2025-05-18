@@ -475,6 +475,20 @@ section,
   game-box {
     margin: 0px auto; /* Adjust 20px to match the exact spacing of #about */
 }
+
+  .game-content {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 5px;
+    }
+    
+    .game-content video {
+        width: 100%;         
+        padding: 20px;
+        max-width: none;    
+        flex: none;      
+    }
+  
     .resume-wrapper {
     padding: 1.5rem 1rem; /* Less top/bottom padding */
 }

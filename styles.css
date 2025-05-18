@@ -451,6 +451,12 @@ gap: 10px;
         padding-right: 0px;
         padding: 5px;
     }
+    
+    .game-content video {
+        width: 100%;         
+        max-width: none;    
+        flex: none;      
+    }
 
       .resume-image {
   margin-bottom: 0rem;

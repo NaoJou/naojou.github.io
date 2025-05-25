@@ -465,7 +465,10 @@ gap: 10px;
         max-width: 900px;
         border-radius: 10px;
         box-sizing: border-box;
-                      margin: 20px 0;
+    }
+
+    .game-info {
+                              margin: 20px 0;
     }
 
       .resume-image {

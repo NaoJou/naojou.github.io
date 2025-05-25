@@ -444,7 +444,6 @@ gap: 10px;
     
   .game-box {
     width: var(--main-container-width-tablet);
-      margin: 20px 0;
   }
 
     .game-content {
@@ -466,6 +465,10 @@ gap: 10px;
         max-width: 900px;
         border-radius: 10px;
         box-sizing: border-box;
+    }
+
+    .game-info {
+              margin: 20px 0;
     }
 
       .resume-image {

@@ -467,9 +467,15 @@ gap: 10px;
         box-sizing: border-box;
     }
 
-    .game-info {
-                              margin: 20px 0;
-    }
+.game-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
       .resume-image {
   margin-bottom: 0rem;

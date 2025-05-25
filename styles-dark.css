@@ -423,6 +423,37 @@ section a:focus {
   .game-box {
     width: var(--main-container-width-tablet);
   }
+
+  .game-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+        margin: 0 auto;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    .game-content video, 
+    .game-content .single-image,
+    .game-info {
+        flex: none;
+        align-items: center;
+        width: 100%;      
+        margin: 0 auto;
+        max-width: 900px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+.game-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
   
   .resume-image {
   margin-bottom: 0rem;

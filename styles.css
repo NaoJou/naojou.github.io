@@ -465,6 +465,7 @@ gap: 10px;
         max-width: 900px;
         border-radius: 10px;
         box-sizing: border-box;
+        padding: 20px 0; 
     }
 
       .resume-image {

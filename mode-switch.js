@@ -42,6 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         
     const leoncitozeImage = document.getElementById("leoncitozeImage");
     if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail.png";
+
+            const veilImage = document.getElementById("veilImage");
+    if (veilImage) veilImage.src = "assets/veil-thumbnail.png";
+        
+            const portfolioImage = document.getElementById("portfolioImage");
+    if (portfolioImage) portfolioImage.src = "assets/Portfolio_First.png";
     }
 
     // Apply saved theme on page load

@@ -442,6 +442,68 @@ section {
   background-color: var(--accent-pink, #E1576A);
 }
 
+.expand-arrow-bar {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: 'Jost', sans-serif;
+  border-top: 1px solid var(--nav-orange);
+  transition: background 0.3s;
+}
+
+.expand-arrow-bar:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.expand-arrow-bar .arrow {
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.skill-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 10px 0;
+}
+
+.skill-entry img {
+  width: 32px;
+  height: 32px;
+}
+
+.skill-info strong {
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+}
+
+.skill-info p {
+  margin: 3px 0 0 0;
+  font-size: 0.95em;
+  line-height: 1.3;
+}
+
+.hidden {
+  display: none;
+}
+
+.expanded .arrow {
+  transform: rotate(180deg);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
 header {

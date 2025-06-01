@@ -448,7 +448,7 @@ section {
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(248, 180, 155, 0.5);
   font-family: 'Jost', sans-serif;
   border-top: 1px solid var(--nav-orange);
   transition: background 0.3s;
@@ -481,8 +481,8 @@ section {
 }
 
 .skill-entry img {
-  width: 32px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
 }
 
 .skill-info strong {

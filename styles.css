@@ -267,8 +267,8 @@ line-height: 1.6;
 
 .game-content {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding: 20px;
   align-items: center;

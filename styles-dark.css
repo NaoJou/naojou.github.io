@@ -454,6 +454,7 @@ section a:focus {
 
 .skills-grid {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   padding: 20px;
@@ -466,6 +467,8 @@ section a:focus {
   gap: 10px;
   border-bottom: 1px solid var(--nav-blue);
   padding: 10px 0;
+      flex: 1 1 45%;
+  position: relative;
 }
 
 .skill-entry:not(:last-child)::after {

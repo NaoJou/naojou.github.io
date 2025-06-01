@@ -912,6 +912,9 @@ header {
   font-size: 1em;
   text-align: left;
 }
+      .skill-entry .skill-info p {
+  text-align: justify !important;
+}
 
 .social-icons a img {
     width: 30px; /* Make icons a bit bigger for phones */

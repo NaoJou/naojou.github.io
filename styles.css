@@ -274,10 +274,17 @@ line-height: 1.6;
   align-items: flex-start;
 }
 
-.game-content .single-image,
+.game-content .single-image {
+  flex: 1 1 50%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .game-content .game-info {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 1 1 50%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -297,15 +304,6 @@ line-height: 1.6;
   text-align: justify;
   max-width: 700px;
   margin: 0 auto 1rem auto;
-}
-
-.game-info {
-  flex: 1 1 300px;
-  max-width: 500px;
-}
-
-.game-info p {
-  margin: 0;
 }
 
 .play-link-wrapper {

@@ -483,6 +483,8 @@ gap: 10px;
         max-width: 900px;
         border-radius: 10px;
         box-sizing: border-box;
+        height: auto;
+        object-fits: cover;
     }
 
     .video-wrapper,

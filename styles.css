@@ -422,7 +422,7 @@ section {
   display: none;
   position: fixed;
   bottom: 40px;
-  right: 60px;
+  right: 40px;
   z-index: 99;
   font-size: 24px;
   border: none;
@@ -430,7 +430,7 @@ section {
   background-color: var(--nav-orange, #F8B49B); /* fallback */
   color: white;
   cursor: pointer;
-  padding: 15px 15px;
+  padding: 10px;
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }

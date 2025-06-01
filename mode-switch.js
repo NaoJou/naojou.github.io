@@ -2,10 +2,15 @@
 
 // === GLOBAL FUNCTIONS ===
 function toggleSkills(trigger) {
-  const grid = trigger.nextElementSibling;
+const grid = trigger.parentElement.querySelector('.skills-grid');
   const arrow = trigger.querySelector('.arrow');
-  grid.classList.toggle('hidden');
-  trigger.classList.toggle('expanded');
+  if (grid) {
+    grid.classList.toggle('hidden');
+  }
+  if (arrow) {
+    trigger.classList.toggle('expanded');
+    arrow.textContent = trigger.classList.contains('expanded') ? '▲' : '▼';
+  }
 }
 
 function setDarkMode() {

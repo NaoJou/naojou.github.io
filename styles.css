@@ -274,23 +274,19 @@ line-height: 1.6;
   align-items: center;
 }
 
-.game-content .single-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.game-content .game-info {
-  flex: 0 0 50%;
-  max-width: 50%;
-  box-sizing: border-box;
-}
-
 .game-content video {
   flex: 1 1 350px;
   max-width: 500px;
   border-radius: 10px;
+}
+
+.game-info {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.game-info p {
+  margin: 0;
 }
 
 .resume-wrapper {

@@ -415,7 +415,7 @@ section a:focus {
   font-size: 24px;
   border: none;
   outline: none;
-  background-color: var(--nav-orange, #F8B49B); /* fallback */
+  background-color: var(--nav-blue, #F8B49B); /* fallback */
   color: white;
   cursor: pointer;
   padding: 10px 15px;
@@ -424,7 +424,7 @@ section a:focus {
 }
 
 #scrollTopBtn:hover {
-  background-color: var(--accent-pink, #E1576A);
+  background-color: var(--nav-darkerblue, #E1576A);
 }
 
 

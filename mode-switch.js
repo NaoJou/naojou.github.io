@@ -100,4 +100,15 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const currentPage = window.location.pathname.split("/").pop();
   if (activePage) activePage.textContent = pageMap[currentPage] || "ABOUT";
+
+  // Attach toggleSkills listeners
+  const expandBars = document.querySelectorAll(".expand-arrow-bar");
+  expandBars.forEach(bar => {
+    bar.addEventListener("click", function () {
+      const grid = bar.nextElementSibling;
+      const arrow = bar.querySelector(".arrow");
+      grid.classList.toggle("hidden");
+      bar.classList.toggle("expanded");
+    });
+  });
 });

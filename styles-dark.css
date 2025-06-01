@@ -455,7 +455,7 @@ section a:focus {
 .skills-grid {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   padding: 20px;
   border-top: 1px solid var(--nav-blue);

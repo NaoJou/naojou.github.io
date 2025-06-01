@@ -457,14 +457,14 @@ section a:focus {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   padding: 20px;
-  border-top: 1px solid var(--text-blue);
+  border-top: 1px solid var(--text-darker);
 }
 
 .skill-entry {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  border-bottom: 1px solid var(--text-blue);
+  border-bottom: 1px solid var(--text-darker);
   padding: 10px 0;
 }
 

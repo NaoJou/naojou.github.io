@@ -881,6 +881,37 @@ header {
     font-size: 1em;
   }
 
+    .skills-grid {
+  display: flex !important;
+  flex-direction: column;
+  padding: 10px 15px 20px 15px;
+  gap: 25px;
+  border-top: 1px solid rgba(248, 180, 155, 0.5);
+}
+
+.skills-grid::before {
+  display: none;
+}
+
+.skill-entry {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--nav-orange);
+  padding-bottom: 20px;
+}
+
+.skill-entry img {
+  width: 80px;
+  height: 80px;
+}
+
+.skill-info p {
+  font-size: 1em;
+  text-align: left;
+}
+
 .social-icons a img {
     width: 30px; /* Make icons a bit bigger for phones */
     height: 30px;

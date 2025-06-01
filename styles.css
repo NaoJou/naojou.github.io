@@ -455,7 +455,7 @@ section {
 }
 
 .expand-arrow-bar:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--nav-orange);
 }
 
 .expand-arrow-bar .arrow {
@@ -469,7 +469,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   padding: 20px;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(248, 180, 155, 0.5);
 }
 
 .skill-entry {

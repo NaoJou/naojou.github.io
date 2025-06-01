@@ -563,7 +563,7 @@ section,
 
     .video-wrapper,
   .game-info,
-    .single-image {
+    .image-wrapper {
     flex: none;
     width: 100%;
     max-width: 100%;

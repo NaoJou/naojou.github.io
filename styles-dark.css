@@ -311,6 +311,9 @@ line-height: 1.6;
   padding: 2rem;
   max-width: 100%;
   text-align: center;
+    flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
 }
 
 .resume-wrapper p {
@@ -327,6 +330,22 @@ line-height: 1.6;
 .game-info p {
   margin: 0;
 }
+
+.video-wrapper {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 .play-link-wrapper {
   margin-bottom: 0.5rem;

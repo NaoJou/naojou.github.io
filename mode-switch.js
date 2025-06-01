@@ -191,14 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
     activePage.textContent = pageMap[currentPage] || "ABOUT";
 });
 
-        // Arrow expander
-function toggleSkills(trigger) {
-  const grid = trigger.nextElementSibling;
-  const arrow = trigger.querySelector('.arrow');
-  grid.classList.toggle('hidden');
-  trigger.classList.toggle('expanded');
-}
-
     // Dynamically update the active page name
     const pageMap = {
         "index.html": "ABOUT",
@@ -212,4 +204,10 @@ function toggleSkills(trigger) {
     activePage.textContent = pageMap[currentPage] || "ABOUT";
 });
 
-
+        // Arrow expander
+function toggleSkills(trigger) {
+  const grid = trigger.nextElementSibling;
+  const arrow = trigger.querySelector('.arrow');
+  grid.classList.toggle('hidden');
+  trigger.classList.toggle('expanded');
+}

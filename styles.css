@@ -619,7 +619,6 @@ section,
     justify-content: center;
     width: 100%;
     flex: none; /* override flex behavior */
-    margin-top: 1rem;
   }
 
   .image-wrapper .single-image {

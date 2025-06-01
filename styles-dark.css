@@ -476,7 +476,7 @@ section a:focus {
   content: "";
   position: absolute;
   top: 20px;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   width: 1px;
   background-color: var(--nav-blue);

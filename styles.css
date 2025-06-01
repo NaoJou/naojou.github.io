@@ -418,6 +418,27 @@ section {
   opacity: 0;
 }
 
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: var(--nav-orange, #F8B49B); /* fallback */
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--accent-pink, #E1576A);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
 header {

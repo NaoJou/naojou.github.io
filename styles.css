@@ -905,6 +905,7 @@ header {
 .skill-entry img {
   width: 80px;
   height: 80px;
+  text-align: justify;
 }
 
 .skill-info p {

@@ -464,6 +464,15 @@ section a:focus {
         box-sizing: border-box;
     }
 
+  
+    .video-wrapper,
+  .game-info,
+    .single-image {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
 .game-content {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -551,6 +560,15 @@ section,
   max-width: 100% !important;
   height: auto;
 }
+
+  
+    .video-wrapper,
+  .game-info,
+    .single-image {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
 
       .game-box {
     padding-bottom: 0px; /* Reduce the bottom padding inside the box */

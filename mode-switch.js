@@ -66,6 +66,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+      ? "block" : "none";
+  };
+
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burgerMenu");
     const navLinks = document.getElementById("navLinks");
     const activePage = document.getElementById("activePage");

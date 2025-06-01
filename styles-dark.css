@@ -456,9 +456,10 @@ section a:focus {
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 20px;
+  gap: 20px 40px;
+  padding: 20px 20px 40px 20px;
   border-top: 1px solid var(--nav-blue);
+        position: relative;
 }
 
 .skill-entry {
@@ -471,14 +472,15 @@ section a:focus {
   position: relative;
 }
 
-.skill-entry:not(:last-child)::after {
+.skills-grid::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: -10px;
-  height: 100%;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
   width: 1px;
   background-color: var(--nav-blue);
+  transform: translateX(-50%);
 }
 
 .skill-entry img {

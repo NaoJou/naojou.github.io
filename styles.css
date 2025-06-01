@@ -468,9 +468,21 @@ section {
   display: grid;
     flex-wrap: wrap;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 20px;
+  gap: 20px 40px;
+  padding: 20px 20px 40px 20px;
   border-top: 1px solid rgba(248, 180, 155, 0.5);
+      position: relative;
+}
+
+.skills-grid::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 1px;
+  background-color: var(--nav-orange);
+  transform: translateX(-50%);
 }
 
 .skill-entry {
@@ -481,16 +493,6 @@ section {
   padding: 10px 0;
     flex: 1 1 45%;
   position: relative;
-}
-
-.skill-entry:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -10px;
-  height: 100%;
-  width: 1px;
-  background-color: var(--nav-orange);
 }
 
 .skill-entry img {

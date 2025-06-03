@@ -893,6 +893,10 @@ header {
   display: none;
 }
 
+    .skills-grid.hidden {
+  display: none !important;
+}
+
 .skill-entry {
   flex-direction: column;
   align-items: center;

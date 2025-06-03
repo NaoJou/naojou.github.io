@@ -858,6 +858,10 @@ header {
   text-align: justify;
 }
 
+  .skills-grid.hidden {
+  display: none !important;
+}
+
 .skill-info p {
   font-size: 1em;
   text-align: left;

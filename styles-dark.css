@@ -500,7 +500,7 @@ section a:focus {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .expanded .arrow {

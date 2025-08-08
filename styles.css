@@ -287,6 +287,8 @@ line-height: 1.6;
 
 .game-info p {
   margin: 0;
+      font-size: 1em;
+  line-height: 1.5;
 }
 
 .video-wrapper {

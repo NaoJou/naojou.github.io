@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const page1 = document.getElementById("resumePage1");
   const page2 = document.getElementById("resumePage2");
 
-  if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV2_dark.pdf";
+  if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV_dark.pdf";
   if (page1) page1.src = "assets/CV2Page1_v2.png";
   if (page2) page2.src = "assets/CV2Page2_v2.png";
 

@@ -51,8 +51,8 @@ function setHappyMode() {
   const page2 = document.getElementById("resumePage2");
 
   if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV.pdf";
-  if (page1) page1.src = "assets/CV2Page1_v2.png";
-  if (page2) page2.src = "assets/CV2Page2_v2.png";
+  if (page1) page1.src = "assets/CV1Page1_v2.png";
+  if (page2) page2.src = "assets/CV1Page2_v2.png";
 
   const leoncitozeImage = document.getElementById("leoncitozeImage");
   if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail.png";

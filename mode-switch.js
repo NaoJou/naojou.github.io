@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (linkedinIcon) linkedinIcon.src = "assets/linkedin-iconblue.png";
     if (itchioIcon) itchioIcon.src = "assets/itchio-iconblue.png";
 
-const resumeLink = document.getElementById("resumeLink");
-    const page1 = document.getElementById("resumePage1");
-    const page2 = document.getElementById("resumePage2");
+ const resumeLink = document.getElementById("resumeLink");
+  const page1 = document.getElementById("resumePage1");
+  const page2 = document.getElementById("resumePage2");
 
-    if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV2_dark.pdf";
-    if (page1) page1.src = "assets/CV2Page1_dark.png";
-    if (page2) page2.src = "assets/CV2Page2_dark.png";
+  if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV_dark.pdf";
+  if (page1) page1.src = "assets/CV2Page1_v2.png";
+  if (page2) page2.src = "assets/CV2Page2_v2.png";
 
     const leoncitozeImage = document.getElementById("leoncitozeImage");
     if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail2.png";
@@ -39,28 +39,32 @@ const resumeLink = document.getElementById("resumeLink");
     updateThemeIcons("dark");
   }
 
-  function setHappyMode() {
-    themeStylesheet.href = "styles.css";
-    localStorage.setItem("theme", "happy");
-    if (linkedinIcon) linkedinIcon.src = "assets/linkedin-icon.png";
-    if (itchioIcon) itchioIcon.src = "assets/itchio-icon.png";
+function setHappyMode() {
+  themeStylesheet.href = "styles.css";
+  localStorage.setItem("theme", "happy");
 
-    const resumeImage = document.getElementById("resumeImage");
-    const resumeLink = document.getElementById("resumeLink");
-    if (resumeImage) resumeImage.src = "assets/NaomiJouan_CV.png";
-    if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV.pdf";
+  if (linkedinIcon) linkedinIcon.src = "assets/linkedin-icon.png";
+  if (itchioIcon) itchioIcon.src = "assets/itchio-icon.png";
 
-    const leoncitozeImage = document.getElementById("leoncitozeImage");
-    if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail.png";
+  const resumeLink = document.getElementById("resumeLink");
+  const page1 = document.getElementById("resumePage1");
+  const page2 = document.getElementById("resumePage2");
 
-    const veilImage = document.getElementById("veilImage");
-    if (veilImage) veilImage.src = "assets/veil-thumbnail.png";
+  if (resumeLink) resumeLink.href = "assets/NaomiJouan_CV.pdf";
+  if (page1) page1.src = "assets/CV1Page1_v2.png";
+  if (page2) page2.src = "assets/CV1Page2_v2.png";
 
-    const portfolioImage = document.getElementById("portfolioImage");
-    if (portfolioImage) portfolioImage.src = "assets/Portfolio_First.png";
+  const leoncitozeImage = document.getElementById("leoncitozeImage");
+  if (leoncitozeImage) leoncitozeImage.src = "assets/Leoncitoze_thumbnail.png";
 
-    updateThemeIcons("happy");
-  }
+  const veilImage = document.getElementById("veilImage");
+  if (veilImage) veilImage.src = "assets/veil-thumbnail.png";
+
+  const portfolioImage = document.getElementById("portfolioImage");
+  if (portfolioImage) portfolioImage.src = "assets/Portfolio_First.png";
+
+  updateThemeIcons("happy");
+}
 
   // Apply saved theme
   const savedTheme = localStorage.getItem("theme");

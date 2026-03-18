@@ -46,13 +46,68 @@
     </ul>
 </nav>
 
-    <section class="project-tabs-wrapper">
-  <div class="project-tabs">
-    <button class="project-tab active">Colonie 404</button>
-    <button class="project-tab">Brewmance</button>
-    <button class="project-tab">Veil of the Dreambound</button>
+      <section id="colonie404" class="game-box">
+  <div class="title-bar">Colonie 404 - Released Game</div>
 
-    <button class="project-tab other-projects-tab">Other Projects</button>
+  <div class="game-content">
+    <div class="video-wrapper">
+      <video controls poster="assets/coloniethumbnail.png">
+        <source src="assets/colonie-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="game-info">
+      <p class="play-link-wrapper">
+        <a href="https://colonie404.ca/" target="_blank" class="play-link">Click here to play</a>
+      </p>
+      <p>
+        <strong>Roles:</strong> Game design, narrative design.<br>
+        This game is the result of the collaboration between Affordance Studio, the Quebec Press Council, and my team. 
+          We developed it to combat disinformation, with the goal of teaching players how to verify sources and determine 
+          whether an article is real or fake. The player can then decide if they want to share it or ignore it. All of this, 
+          while being on a spaceship, with the huge responsability of being the only one having access to news from mother Earth. 
+          Try playing it, and see if you manage to keep your colony alive!
+      </p>
+    </div>
+  </div>
+
+  <div class="expand-arrow-bar" onclick="toggleSkills(this)">
+    <span>See roles & skills</span>
+    <span class="arrow">▼</span>
+  </div>
+
+  <div class="skills-grid hidden">
+    <!-- Game Design -->
+    <div class="skill-entry">
+      <img class="theme-icon" src="assets/icon-game.png"
+           data-happy="assets/icon-game.png" data-dark="assets/icon-game2.png"
+           alt="Game Design icon">
+      <div class="skill-info">
+        <strong>Game Design</strong>
+        <p>
+          ‣ Found the <strong>core idea</strong> from the jam theme and framed a clear loop<br>
+          ‣ Visualized <strong>flow</strong> and wave sequencing (orders → mixing → outcomes)<br>
+          ‣ Designed <strong>ingredient semantics</strong> so recipes reflect character traits<br>
+          ‣ Tuned pacing, readability, and moment-to-moment feedback
+        </p>
+      </div>
+    </div>
+
+    <!-- Narrative Design -->
+    <div class="skill-entry">
+      <img class="theme-icon" src="assets/icon-writing.png"
+           data-happy="assets/icon-writing.png" data-dark="assets/icon-writing2.png"
+           alt="Writing icon">
+      <div class="skill-info">
+        <strong>Narrative Design</strong>
+        <p>
+          ‣ Wrote several <strong>character cards</strong> and the shop’s overarching story<br>
+          ‣ Structured the <strong>wave order</strong> and reveal cadence to a punchy final twist<br>
+          ‣ Aligned tone, choices, and outcomes to reinforce theme and humor
+        </p>
+      </div>
+    </div>
   </div>
 </section>
     
